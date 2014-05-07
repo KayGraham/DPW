@@ -58,7 +58,7 @@ strings["Man object"]= response
 
 #Updating strings dict with user input for Adj woman
 
-response = raw_input("Enter another adjective. (mean, funny, aggressive) ")
+response = raw_input("Enter another adjective. (silly, scary, shy) ")
 strings["Adj woman"]= response
 #print strings["Adj woman"]
 
@@ -111,20 +111,20 @@ numbers.append(response)
 #Math problem function
 
 def calcVol(a, b, c):
-    volume = a * b * c
-    return volume
+    volume = a * b * c #Mathmatical Operation
+    return volume #Return Value
 
 #Room size function
 
 def calcSize(x,y):
-    measure = x * y
+    measure = x * y #Mathmatical Operation
 
     if measure>200:
         size = "large"
-        return size
+        return size #Return Value
     else:
         size = "small"
-        return size
+        return size #Return Value
 
 #Calling math function
 
@@ -132,17 +132,17 @@ v1 = 2
 v2 = 3
 v3 = 4
 
-v = calcVol(v1, v2, v3);
+v = calcVol(v1, v2, v3); #Function Parameters
 
 #Calculating new volume
 
-vol2 = v /2
+vol2 = v /2 #Mathmatical Operation
 
 #Calling size function
 x = 9
 y = 10
 
-s = calcSize(x,y)
+s = calcSize(x,y) #Function Parameters
 
 #Locals
 num1 = numbers[0]
@@ -158,13 +158,14 @@ gender = strings["Gender"]
 room_size = s
 person = strings["Neighbor"]
 num3 = numbers[2]
-minutes = int(numbers[0])/2
+minutes = int(numbers[0])
+minutes /= 2 #Assignment Operator
 items = 9
-years = int(numbers[0])-8
+years = int(numbers[0])-8 #Mathmatical Operation
 
 #Print message
 message = '''
-The Last Nap
+Mad Lib - The Last Nap
 
 About {num1} years ago on a lazy Saturday I decided to take a nap in my {room}.
 I tried to do a math problem in my head. I always hated math, so that should have put me to sleep in no time.
@@ -174,16 +175,16 @@ So if I have a box and its sides measure {v1}, {v2} and {v3}, the volume would b
 message = message.format(**locals())
 print message
 
-#  While loop for counting sheep
+#While loop for counting sheep
 i = 1
 ii = 5
-while i<ii:
-    if i<ii-1:
+while i<ii: #Conditional Statement
+    if i<ii-1: #Conditional Statement
         print i, "sheep"
-        i += 1
+        i += 1 #Assignment Operator
     else:
         print i, "sheep..."
-        i += 1
+        i += 1 #Assignment Operator
 
 message = '''
 This was not your normal nap. You see just as I had fallen a sleep a(n) {man} man broke down my front door
