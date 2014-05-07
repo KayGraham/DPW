@@ -106,7 +106,6 @@ numbers.append(response)
 
 #Creating story
 
-
 #Math problem function
 
 def calcVol(a, b, c):
@@ -118,12 +117,14 @@ def calcVol(a, b, c):
 
 v = calcVol(2,3,4);
 
-
-# While loop for counting sheep
+message = '''
+About {number[0]} years ago on a lazy Saturday I decided to take a nap in my {string["Room"]}.
+I tried to do a math problem in my head. I always hated math, so that should have put me to sleep in no time.
+So if I have a box and its sides measure 2, 3 and 4, the volume would be 2 * 3 * 4, which is {v}.
+That didn’t work so I began counting sheep to lull my self to sleep.
+'''
+#  While loop for counting sheep
 i = 1
 while i<4:
     print i, "sheep"
     i += 1
-
-
-#Printing story
