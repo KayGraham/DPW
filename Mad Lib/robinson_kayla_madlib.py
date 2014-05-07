@@ -38,3 +38,10 @@ numbers.append(response)
 response = raw_input("Enter a room in your house. (living room, office, guest room)")
 strings["Room"]= response
 #print strings["Room"]
+
+
+#Updating strings dict with user input for My object
+
+response = raw_input("Enter an object that can be found in this room.")
+strings["My object"]= response
+#print strings["My object"]
