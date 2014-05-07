@@ -54,3 +54,10 @@ strings["Adj man"]= response
 #print strings["Adj man"]
 
 
+#Updating strings dict with user input for Man object
+
+response = raw_input("Enter a random object. (shoe, car, bat)")
+strings["Man object"]= response
+#print strings["Man object"]
+
+
