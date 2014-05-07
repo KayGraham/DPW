@@ -23,84 +23,84 @@ strings = {"Room":"","Adj man":"","My object":"","Man object":"","Adj woman":"",
 
 #Getting first number from user and adding them to numbers array
 
-response = raw_input("Enter a number. This number should be greater than 10.")
+response = raw_input("Enter a number. This number should be greater than 10. ")
 numbers.append(response)
 #print numbers[0]
 
 
 #Updating strings dict with user input for Room
 
-response = raw_input("Enter a room in your house. (living room, office, guest room)")
+response = raw_input("Enter a room in your house. (living room, office, guest room) ")
 strings["Room"]= response
 #print strings["Room"]
 
 
 #Updating strings dict with user input for My object
 
-response = raw_input("Enter an object that can be found in this room.")
+response = raw_input("Enter an object that can be found in this room. ")
 strings["My object"]= response
 #print strings["My object"]
 
 
 #Updating strings dict with user input for Adj man
 
-response = raw_input("Enter an adjective. (mean, funny, aggressive)")
+response = raw_input("Enter an adjective. (mean, funny, aggressive) ")
 strings["Adj man"]= response
 #print strings["Adj man"]
 
 
 #Updating strings dict with user input for Man object
 
-response = raw_input("Enter a random object. (shoe, car, bat)")
+response = raw_input("Enter a random object. (shoe, car, bat) ")
 strings["Man object"]= response
 #print strings["Man object"]
 
 
 #Updating strings dict with user input for Adj woman
 
-response = raw_input("Enter another adjective. (mean, funny, aggressive)")
+response = raw_input("Enter another adjective. (mean, funny, aggressive) ")
 strings["Adj woman"]= response
 #print strings["Adj woman"]
 
 
 #Getting second number (float) from user and adding them to numbers array
 
-response = raw_input("Enter a decimal number. (35.6, 9.8, 1.2)")
+response = raw_input("Enter a decimal number. (35.6, 9.8, 1.2) ")
 numbers.append(response)
 #print numbers[1]
 
 
 #Updating strings dict with user input for Gender
 
-response = raw_input("Are you a man or a woman.")
+response = raw_input("Are you a man or a woman. ")
 strings["Gender"]= response
 #print strings["Gender"]
 
 
 #Updating strings dict with user input for Adj user
 
-response = raw_input("Enter an adjective that describes you.")
+response = raw_input("Enter an adjective that describes you. ")
 strings["Adj user"]= response
 #print strings["Adj user"]
 
 
 #Updating strings dict with user input for Neighbor
 
-response = raw_input("Enter a person you have a close relationship with. (friend, mom, sister)")
+response = raw_input("Enter a person you have a close relationship with. (friend, mom, sister) ")
 strings["Neighbor"]= response
 #print strings["Neighbor"]
 
 
 #Getting a number from user and adding them to numbers array
 
-response = raw_input("Enter any number. (22, 58, 2)")
+response = raw_input("Enter any number. (22, 58, 2) ")
 numbers.append(response)
 #print numbers[2]
 
 
 #Getting a number from user and adding them to numbers array
 
-response = raw_input("Enter one more number. (22, 58, 2)")
+response = raw_input("Enter one more number. (22, 58, 2) ")
 numbers.append(response)
 #print numbers[3]
 
@@ -164,6 +164,8 @@ years = int(numbers[0])-8
 
 #Print message
 message = '''
+The Last Nap
+
 About {num1} years ago on a lazy Saturday I decided to take a nap in my {room}.
 I tried to do a math problem in my head. I always hated math, so that should have put me to sleep in no time.
 So if I have a box and its sides measure {v1}, {v2} and {v3}, the volume would be {v1} * {v2} * {v3}, which is {vol}.
@@ -184,8 +186,6 @@ while i<ii:
         i += 1
 
 message = '''
-The Last Nap
-
 This was not your normal nap. You see just as I had fallen a sleep a(n) {man} man broke down my front door
 and awoke me. He ran into the {room} and began yelling at me, "I want that {object1}". I then told him,
 "You are not taking my {object1}," which was a bad idea because then he pulled out a(n) {object2} and threatened
