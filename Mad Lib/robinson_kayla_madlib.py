@@ -22,3 +22,12 @@ strings = {"Room":"","Adj man":"","My object":"","Man object":"","Adj woman":"",
 sheep = 3
 
 
+#Getting user inputs
+
+
+
+#Getting first number from user and adding them to numbers array
+
+response = raw_input("Enter a number. This number should be greater than 10.")
+numbers.append(response)
+#print numbers[0]
