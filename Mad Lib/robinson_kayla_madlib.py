@@ -17,3 +17,8 @@ strings = dict()
 strings = {"Room":"","Adj man":"","My object":"","Man object":"","Adj woman":"","Gender":"","Adj user":"","Neighbor":""}
 
 
+#Var to hold the number of sheep to count
+
+sheep = 3
+
+
