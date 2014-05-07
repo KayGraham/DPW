@@ -11,3 +11,9 @@ Mad Lib
 numbers = []
 
 
+#Dictonary that will hold strings input by user
+
+strings = dict()
+strings = {"Room":"","Adj man":"","My object":"","Man object":"","Adj woman":"","Gender":"","Adj user":"","Neighbor":""}
+
+
