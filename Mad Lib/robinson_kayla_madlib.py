@@ -72,7 +72,7 @@ numbers.append(response)
 
 #Updating strings dict with user input for Gender
 
-response = raw_input("Enter your gender. (male or female)")
+response = raw_input("Are you a man or a woman.")
 strings["Gender"]= response
 #print strings["Gender"]
 
@@ -158,9 +158,9 @@ gender = strings["Gender"]
 room_size = s
 person = strings["Neighbor"]
 num3 = numbers[2]
-minutes = numbers[0]/2
+minutes = int(numbers[0])/2
 items = 9
-years = numbers[0]-8
+years = int(numbers[0])-8
 
 #Print message
 message = '''
@@ -184,8 +184,10 @@ while i<ii:
         i += 1
 
 message = '''
+The Last Nap
+
 This was not your normal nap. You see just as I had fallen a sleep a(n) {man} man broke down my front door
-and awake me. He ran into the {room} and began yelling at me, "I want that {object1}". I then told him,
+and awoke me. He ran into the {room} and began yelling at me, "I want that {object1}". I then told him,
 "You are not taking my {object1}," which was a bad idea because then he pulled out a(n) {object2} and threatened
 me with it. Just then a {woman} woman came barging into the {room} and said to the man, "You have {num2}
 seconds to hand over my {object2}." The {man} man refused and the two began fighting over the {object2}.
@@ -193,11 +195,11 @@ The {object2} flew in my direction and I had no choice but to try and catch it t
 That was when the {woman} woman noticed me and yelled to the man, "Are you seriously going to rob this
 {user} {gender}." I knew this was my only opportunity to make a run for it. It was a {room_size} room so you
 can imagine how long it took to get to the other side of the room. I quietly made it to the other side and climbed out
-of the window.I was too scared to run fearing I might be spotted, so I crawled all the way to my {person}'s house {num3}
+of the window. I was too scared to run fearing I might be spotted, so I crawled all the way to my {person}'s house {num3}
 blocks away. Once safely inside I called 911 to report this crazy incident. Can you believe that it took
-{minutes} minuets for the cops to get there. After they had sorted the situation out, both the man and the woman had
-gotten away and one of them had taken {items} item(s) from my house. And that was the last time I napped during the day.
-It's only been {years} years since I could rest peacefully at night.
+{minutes} minutes for the cops to get there. After they had sorted the situation out, both the man and the woman had
+gotten away and one of them had taken {items} item(s) from my house. That was the last time I napped during the day.
+And it's only been {years} years since I could rest peacefully at night.
 '''
 message = message.format(**locals())
 print message
