@@ -82,3 +82,10 @@ strings["Gender"]= response
 #print strings["Gender"]
 
 
+#Updating strings dict with user input for Adj user
+
+response = raw_input("Enter an adjective that describes you.")
+strings["Adj user"]= response
+#print strings["Adj user"]
+
+
