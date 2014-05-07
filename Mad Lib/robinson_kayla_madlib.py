@@ -106,43 +106,54 @@ numbers.append(response)
 
 #Creating story
 
+#Functions
+
 #Math problem function
 
 def calcVol(a, b, c):
     volume = a * b * c
     return volume
 
+#Room size function
+
+
+#Locals
+
+v1 = 2
+v2 = 3
+v3 = 4
 
 #Calling math function
+v = calcVol(v1, v2, v3);
 
-v = calcVol(2,3,4);
+#Calculating new volume
+vol2 = v /2
 
-#locals
 num1 = numbers[0]
 room = strings["Room"]
 man = strings["Adj man"]
 vol = v
+
+#Print message
 message = '''
 About {num1} years ago on a lazy Saturday I decided to take a nap in my {room}.
 I tried to do a math problem in my head. I always hated math, so that should have put me to sleep in no time.
-So if I have a box and its sides measure 2, 3 and 4, the volume would be 2 * 3 * 4, which is {vol}.
-That did not work so I began counting sheep to lull my self to sleep.
+So if I have a box and its sides measure {v1}, {v2} and {v3}, the volume would be {v1} * {v2} * {v3}, which is {vol}.
+ If I cut that box in have the new volume would be {vol2}. That did not work so I began counting sheep to lull my self to sleep.
 '''
 message = message.format(**locals())
 print message
 
 #  While loop for counting sheep
 i = 1
-while i<4:
-    if i<3:
+ii = 5
+while i<ii:
+    if i<ii-1:
         print i, "sheep"
         i += 1
     else:
         print i, "sheep..."
         i += 1
-
-#Functions
-
 
 message = '''
 This was not your normal nap. You see just as I had fallen a sleep a(n) {man} man broke down my front door
