@@ -96,3 +96,9 @@ strings["Neighbor"]= response
 #print strings["Neighbor"]
 
 
+#Getting a number from user and adding them to numbers array
+
+response = raw_input("Enter any number. (22, 58, 2)")
+numbers.append(response)
+#print numbers[2]
+
