@@ -116,23 +116,51 @@ def calcVol(a, b, c):
 
 #Room size function
 
+def calcSize(x,y):
+    measure = x * y
 
-#Locals
+    if measure>200:
+        size = "large"
+        return size
+    else:
+        size = "small"
+        return size
+
+#Calling math function
 
 v1 = 2
 v2 = 3
 v3 = 4
 
-#Calling math function
 v = calcVol(v1, v2, v3);
 
 #Calculating new volume
+
 vol2 = v /2
 
+#Calling size function
+x = 9
+y = 10
+
+s = calcSize(x,y)
+
+#Locals
 num1 = numbers[0]
 room = strings["Room"]
 man = strings["Adj man"]
 vol = v
+object1 = strings["My object"]
+object2 = strings["Man object"]
+woman = strings["Adj woman"]
+num2 = numbers[1]
+user = strings["Adj user"]
+gender = strings["Gender"]
+room_size = s
+person = strings["Neighbor"]
+num3 = numbers[2]
+minutes = numbers[0]/2
+items = 9
+years = numbers[0]-8
 
 #Print message
 message = '''
@@ -157,20 +185,19 @@ while i<ii:
 
 message = '''
 This was not your normal nap. You see just as I had fallen a sleep a(n) {man} man broke down my front door
-and awake me. He ran into the {room} and began yelling at me, "I want that string3". I then told him,
-"You are not taking my string3." which was a bad idea because then he pulled out a string4 and threatened
-me with it. Just then a string5  woman came barging into the string1 and said to the man, "You have float
-seconds to hand over my string4." The {man} man refused and the two began fighting over the string3.
-The string3 flew in my direction and I had no choice but to try and catch it to prevent getting hurt.
-That was when the string4 woman noticed me and yelled to the man, "Are you seriously going to rob this
-string7 string6." I knew this was my only opportunity to make a run for. It was a function1 room so
-if1 to get to the other side of the room. I quietly made it to the other side and climbed out of the window.
-I was too scared to run fearing I might be spotted, so I crawled all the way to my string8's house number2
+and awake me. He ran into the {room} and began yelling at me, "I want that {object1}". I then told him,
+"You are not taking my {object1}," which was a bad idea because then he pulled out a(n) {object2} and threatened
+me with it. Just then a {woman} woman came barging into the {room} and said to the man, "You have {num2}
+seconds to hand over my {object2}." The {man} man refused and the two began fighting over the {object2}.
+The {object2} flew in my direction and I had no choice but to try and catch it to prevent getting hurt.
+That was when the {woman} woman noticed me and yelled to the man, "Are you seriously going to rob this
+{user} {gender}." I knew this was my only opportunity to make a run for it. It was a {room_size} room so you
+can imagine how long it took to get to the other side of the room. I quietly made it to the other side and climbed out
+of the window.I was too scared to run fearing I might be spotted, so I crawled all the way to my {person}'s house {num3}
 blocks away. Once safely inside I called 911 to report this crazy incident. Can you believe that it took
-calculation1 minuets for the cops to get there. When the cops arrived they were very if. After they had
-sorted the situation out, both the man and the woman had gotten away and one of them had taken function
-items from my house. And that was the last time I napped during the day. It's only been calculation2 years
-since I could rest peacefully at night.
+{minutes} minuets for the cops to get there. After they had sorted the situation out, both the man and the woman had
+gotten away and one of them had taken {items} item(s) from my house. And that was the last time I napped during the day.
+It's only been {years} years since I could rest peacefully at night.
 '''
 message = message.format(**locals())
 print message
