@@ -89,3 +89,10 @@ strings["Adj user"]= response
 #print strings["Adj user"]
 
 
+#Updating strings dict with user input for Neighbor
+
+response = raw_input("Enter a person you have a close relationship with. (friend, mom, sister)")
+strings["Neighbor"]= response
+#print strings["Neighbor"]
+
+
