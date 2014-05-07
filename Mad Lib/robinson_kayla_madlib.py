@@ -45,3 +45,12 @@ strings["Room"]= response
 response = raw_input("Enter an object that can be found in this room.")
 strings["My object"]= response
 #print strings["My object"]
+
+
+#Updating strings dict with user input for Adj man
+
+response = raw_input("Enter an adjective. (mean, funny, aggressive)")
+strings["Adj man"]= response
+#print strings["Adj man"]
+
+
