@@ -93,14 +93,14 @@ strings["Neighbor"]= response
 
 #Getting a number from user and adding them to numbers array
 
-response = raw_input("Enter any number. (22, 58, 2) ")
+response = raw_input("Enter any number greater than 0. (22, 58, 2) ")
 numbers.append(response)
 #print numbers[2]
 
 
 #Getting a number from user and adding them to numbers array
 
-response = raw_input("Enter one more number. (22, 58, 2) ")
+response = raw_input("Enter one more number greater than 0. (22, 58, 2) ")
 numbers.append(response)
 #print numbers[3]
 
