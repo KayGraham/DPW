@@ -68,3 +68,10 @@ strings["Adj woman"]= response
 #print strings["Adj woman"]
 
 
+#Getting second number (float) from user and adding them to numbers array
+
+response = raw_input("Enter a decimal number. (35.6, 9.8, 1.2)")
+numbers.append(response)
+#print numbers[1]
+
+
