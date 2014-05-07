@@ -61,3 +61,10 @@ strings["Man object"]= response
 #print strings["Man object"]
 
 
+#Updating strings dict with user input for Adj woman
+
+response = raw_input("Enter another adjective. (mean, funny, aggressive)")
+strings["Adj woman"]= response
+#print strings["Adj woman"]
+
+
