@@ -128,8 +128,34 @@ That did not work so I began counting sheep to lull my self to sleep.
 '''
 message = message.format(**locals())
 print message
+
 #  While loop for counting sheep
 i = 1
 while i<4:
     print i, "sheep"
     i += 1
+
+
+#Functions
+man = strings["Adj man"]
+
+
+message = '''
+This was not your normal nap. You see just as I had fallen a sleep a(n) {man} man broke down my front door
+and awake me. He ran into the {room} and began yelling at me, "I want that string3". I then told him,
+"You are not taking my string3." which was a bad idea because then he pulled out a string4 and threatened
+me with it. Just then a string5  woman came barging into the string1 and said to the man, "You have float
+seconds to hand over my string4." The {man} man refused and the two began fighting over the string3.
+The string3 flew in my direction and I had no choice but to try and catch it to prevent getting hurt.
+That was when the string4 woman noticed me and yelled to the man, "Are you seriously going to rob this
+string7 string6." I knew this was my only opportunity to make a run for. It was a function1 room so
+if1 to get to the other side of the room. I quietly made it to the other side and climbed out of the window.
+I was too scared to run fearing I might be spotted, so I crawled all the way to my string8's house number2
+blocks away. Once safely inside I called 911 to report this crazy incident. Can you believe that it took
+calculation1 minuets for the cops to get there. When the cops arrived they were very if. After they had
+sorted the situation out, both the man and the woman had gotten away and one of them had taken function
+items from my house. And that was the last time I napped during the day. It's only been calculation2 years
+since I could rest peacefully at night.
+'''
+message = message.format(**locals())
+print message
