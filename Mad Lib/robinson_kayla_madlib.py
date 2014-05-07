@@ -17,11 +17,6 @@ strings = dict()
 strings = {"Room":"","Adj man":"","My object":"","Man object":"","Adj woman":"","Gender":"","Adj user":"","Neighbor":""}
 
 
-#Var to hold the number of sheep to count
-
-sheep = 3
-
-
 #Getting user inputs
 
 
@@ -123,3 +118,11 @@ def calcVol(a, b, c):
 
 v = calcVol(2,3,4);
 
+
+# While loop for counting sheep
+i = 0
+while i<4:
+    print i, "sheep"
+
+
+#Printing story
