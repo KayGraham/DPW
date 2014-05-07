@@ -120,9 +120,10 @@ v = calcVol(2,3,4);
 
 
 # While loop for counting sheep
-i = 0
+i = 1
 while i<4:
     print i, "sheep"
+    i += 1
 
 
 #Printing story
