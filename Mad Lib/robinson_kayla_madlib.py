@@ -109,3 +109,17 @@ response = raw_input("Enter one more number. (22, 58, 2)")
 numbers.append(response)
 #print numbers[3]
 
+#Creating story
+
+
+#Math problem function
+
+def calcVol(a, b, c):
+    volume = a * b * c
+    return volume
+
+
+#Calling math function
+
+v = calcVol(2,3,4);
+
