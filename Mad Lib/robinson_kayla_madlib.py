@@ -139,8 +139,8 @@ v = calcVol(v1, v2, v3); #Function Parameters
 vol2 = v /2 #Mathmatical Operation
 
 #Calling size function
-x = 9
-y = 10
+x = 19
+y = 13
 
 s = calcSize(x,y) #Function Parameters
 
@@ -196,7 +196,7 @@ The {object2} flew in my direction and I had no choice but to try and catch it t
 That was when the {woman} woman noticed me and yelled to the man, "Are you seriously going to rob this
 {user} {gender}." I knew this was my only opportunity to make a run for it. It was a {room_size} room so you
 can imagine how long it took to get to the other side of the room. I quietly made it to the other side and climbed out
-of the window. I was too scared to run fearing I might be spotted, so I crawled all the way to my {person}'s house {num3}
+of the window. I was to scared to run fearing I might be spotted, so I crawled all the way to my {person}'s house {num3}
 blocks away. Once safely inside I called 911 to report this crazy incident. Can you believe that it took
 {minutes} minutes for the cops to get there. After they had sorted the situation out, both the man and the woman had
 gotten away and one of them had taken {items} item(s) from my house. That was the last time I napped during the day.
