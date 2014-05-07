@@ -75,3 +75,10 @@ numbers.append(response)
 #print numbers[1]
 
 
+#Updating strings dict with user input for Gender
+
+response = raw_input("Enter your gender. (male or female)")
+strings["Gender"]= response
+#print strings["Gender"]
+
+
