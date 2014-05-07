@@ -117,8 +117,10 @@ def calcVol(a, b, c):
 
 v = calcVol(2,3,4);
 
+#locals
 num1 = numbers[0]
 room = strings["Room"]
+man = strings["Adj man"]
 vol = v
 message = '''
 About {num1} years ago on a lazy Saturday I decided to take a nap in my {room}.
@@ -132,12 +134,14 @@ print message
 #  While loop for counting sheep
 i = 1
 while i<4:
-    print i, "sheep"
-    i += 1
-
+    if i<3:
+        print i, "sheep"
+        i += 1
+    else:
+        print i, "sheep..."
+        i += 1
 
 #Functions
-man = strings["Adj man"]
 
 
 message = '''
