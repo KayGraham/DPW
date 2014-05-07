@@ -31,3 +31,10 @@ sheep = 3
 response = raw_input("Enter a number. This number should be greater than 10.")
 numbers.append(response)
 #print numbers[0]
+
+
+#Updating strings dict with user input for Room
+
+response = raw_input("Enter a room in your house. (living room, office, guest room)")
+strings["Room"]= response
+#print strings["Room"]
