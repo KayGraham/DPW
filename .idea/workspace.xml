@@ -23,10 +23,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data-objects/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="21" selection-start="643" selection-end="643" vertical-scroll-proportion="0.4152824" vertical-offset="0" max-vertical-offset="903">
+            <state line="9" column="21" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes-html/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="49" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding>
+                <element signature="e#46#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes-html/pages.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="18" selection-start="546" selection-end="546" vertical-scroll-proportion="0.3820598" vertical-offset="0" max-vertical-offset="903">
               <folding />
             </state>
           </provider>
@@ -116,7 +136,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-objects" />
+              <option name="myItemId" value="classes-html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab 1 Madlib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,22 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes-html/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="110" selection-end="110" vertical-scroll-proportion="0.11627907" vertical-offset="0" max-vertical-offset="903">
-          <folding>
-            <element signature="e#46#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-html/pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="546" selection-end="546" vertical-scroll-proportion="0.3820598" vertical-offset="0" max-vertical-offset="903">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes-html/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="29" selection-start="35" selection-end="35" vertical-scroll-proportion="0.017084282" vertical-offset="0" max-vertical-offset="878">
@@ -336,9 +354,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lab 1 Madlib/robinson_kayla_madlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.09966777" vertical-offset="0" max-vertical-offset="3165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data-objects/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="643" selection-end="643" vertical-scroll-proportion="0.4152824" vertical-offset="0" max-vertical-offset="903">
+        <state line="9" column="21" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes-html/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding>
+            <element signature="e#46#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes-html/pages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="546" selection-end="546" vertical-scroll-proportion="0.3820598" vertical-offset="0" max-vertical-offset="903">
           <folding />
         </state>
       </provider>
