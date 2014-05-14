@@ -48,11 +48,12 @@ class FormPage(Page):
         pass
 
     @inputs.setter
-    def inputs(self):
+    def inputs(self, arr):
         #change my private inputs variable
         self.__inputs = arr
         #sort through the mega array and cresate HTML inputs based on the info there.
-        print arr
+        for item in arr:
+            print item
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
