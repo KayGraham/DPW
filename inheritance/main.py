@@ -9,7 +9,8 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        p = Page()
+        self.response.write(p.print_out())
 
 class Page(object): #barrowing stuff form the object class
     def __init__(self):
@@ -21,7 +22,13 @@ class Page(object): #barrowing stuff form the object class
     </head>
     <body>
         '''
-
+        self._body = ''
+        self._close = '''
+    </body>
+</html>
+        '''
+    def print_out(self):
+        return self._head + self._body + self._close
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
