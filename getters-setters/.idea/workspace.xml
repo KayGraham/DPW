@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a165e5a-9442-45bc-b2a2-c6146cbf4451" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <ignored path="DPW.iws" />
+    <list default="true" id="f29aabb4-1ecf-49c0-bcee-2afbcedf1cf2" name="Default" comment="" />
+    <ignored path="getters-setters.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,53 +19,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="DPW" />
+    <favorites_list name="getters-setters" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pages.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classes-getter-setter/pages.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="11" selection-start="475" selection-end="475" vertical-scroll-proportion="0.29900333" vertical-offset="0" max-vertical-offset="903">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes-getter-setter/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
-              <folding>
-                <marker date="1399920398000" expanded="true" signature="154:346" placeholder="..." />
-                <marker date="1399920398000" expanded="true" signature="173:346" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Mad Lib/robinson_kayla_madlib.py" />
-        <option value="$PROJECT_DIR$/classes-html/app.yaml" />
-        <option value="$PROJECT_DIR$/classes-html/css/main.css" />
-        <option value="$PROJECT_DIR$/classes-html/pages.py" />
-        <option value="$PROJECT_DIR$/classes-html/main.py" />
-        <option value="$PROJECT_DIR$/data-objects/main.py" />
-        <option value="$PROJECT_DIR$/simple-login/main.py" />
-        <option value="$PROJECT_DIR$/classes-getter-setter/main.py" />
-        <option value="$PROJECT_DIR$/classes-getter-setter/pages.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -107,32 +72,8 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DPW" />
+              <option name="myItemId" value="getters-setters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes-getter-setter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -153,7 +94,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DPW" />
+      <module name="getters-setters" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -177,7 +118,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DPW" />
+      <module name="getters-setters" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -200,7 +141,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DPW" />
+      <module name="getters-setters" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <method />
@@ -214,7 +155,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DPW" />
+      <module name="getters-setters" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -236,7 +177,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DPW" />
+      <module name="getters-setters" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -255,7 +196,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DPW" />
+      <module name="getters-setters" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -270,9 +211,9 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4a165e5a-9442-45bc-b2a2-c6146cbf4451" name="Default" comment="" />
-      <created>1399485433592</created>
-      <updated>1399485433592</updated>
+      <changelist id="f29aabb4-1ecf-49c0-bcee-2afbcedf1cf2" name="Default" comment="" />
+      <created>1399920564949</created>
+      <updated>1399920564949</updated>
     </task>
     <servers />
   </component>
@@ -284,7 +225,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14744146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24978317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -313,82 +254,13 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes-getter-setter/pages.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="885">
+        <state line="19" column="22" selection-start="435" selection-end="435" vertical-scroll-proportion="0.3156146" vertical-offset="0" max-vertical-offset="903">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-getter-setter/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
-          <folding>
-            <marker date="1399920398000" expanded="true" signature="154:346" placeholder="..." />
-            <marker date="1399920398000" expanded="true" signature="173:346" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple-login/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="42" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-html/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="35" selection-end="35" vertical-scroll-proportion="0.017084282" vertical-offset="0" max-vertical-offset="878" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-html/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="126" selection-end="126" vertical-scroll-proportion="0.13667426" vertical-offset="0" max-vertical-offset="878" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab 1 Madlib/robinson_kayla_madlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.09966777" vertical-offset="0" max-vertical-offset="3165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-objects/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="218" selection-end="218" vertical-scroll-proportion="0.14950167" vertical-offset="0" max-vertical-offset="903" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-html/pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-html/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="110" selection-end="110" vertical-scroll-proportion="0.11627907" vertical-offset="0" max-vertical-offset="903" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple-login/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="305" selection-end="305" vertical-scroll-proportion="0.23255815" vertical-offset="0" max-vertical-offset="1680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-getter-setter/pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="475" selection-end="475" vertical-scroll-proportion="0.29900333" vertical-offset="0" max-vertical-offset="903">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes-getter-setter/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <marker date="1399920398000" expanded="true" signature="154:346" placeholder="..." />
-            <marker date="1399920398000" expanded="true" signature="173:346" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
