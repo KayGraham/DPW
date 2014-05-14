@@ -30,6 +30,11 @@ class Page(object): #barrowing stuff form the object class
     def print_out(self):
         return self._head + self._body + self._close
 
+class FormPage(Page):
+    def __init__(self):
+        #constrctor function for the super class
+        super(FormPage, self).__init__()
+        
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
