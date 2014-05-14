@@ -10,6 +10,7 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
+        p.inputs = [['first_name', 'text', 'First Name'],['last_name', 'text', 'Last Name'],['Submit', 'submit']]
         self.response.write(p.print_out())
 
 class Page(object): #barrowing stuff form the object class
@@ -36,12 +37,22 @@ class FormPage(Page):
         super(FormPage, self).__init__() #Page.__init__()
         self._form_open = '<form method="GET">'
         self._form_close = '</form>'
+        self.__inputs = []
         #<input type="text" value="" name="first_name" placeholder="First Name" />
         # ['first_name', 'text', 'First Name']
         #<input type="text" value="" name="last_name" placeholder="Last Name" />
         #<input type="submit" value="Submit" />
 
+    @property
+    def inputs(self):
+        pass
 
+    @inputs.setter
+    def inputs(self):
+        #change my private inputs variable
+        self.__inputs = arr
+        #sort through the mega array and cresate HTML inputs based on the info there.
+        print arr
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
