@@ -22,7 +22,7 @@ class Page(object): #barrowing stuff form the object class
     </head>
     <body>
         '''
-        self._body = ''
+        self._body = 'Filler'
         self._close = '''
     </body>
 </html>
