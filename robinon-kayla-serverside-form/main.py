@@ -22,7 +22,11 @@ class MainHandler(webapp2.RequestHandler):
         <form method="GET">
 
         '''
-
+        page_close = '''
+        </form>
+    </body>
+</html>
+'''
 
 
 app = webapp2.WSGIApplication([
