@@ -80,7 +80,9 @@ class MainHandler(webapp2.RequestHandler):
                 <option value="Wisconsin">Wisconsin</option>
                 <option value="Wyoming">Wyoming</option>
             </select>
+            <input type="submit" value="Submit" />
         '''
+        
         page_close = '''
         </form>
     </body>
