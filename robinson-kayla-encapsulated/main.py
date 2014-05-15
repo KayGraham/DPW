@@ -55,9 +55,11 @@ class MainHandler(webapp2.RequestHandler):
         option5.rent = 825
         option5.calc_monthly_profit()
         option5.calc_annual_profit()
-        self.response.write("monthly profit $" + str(option5.monthly_profit))
-        self.response.write("annual profit $" + str(option5.annual_profit))
+        #self.response.write("monthly profit $" + str(option5.monthly_profit))
+        #self.response.write("annual profit $" + str(option5.annual_profit))
 
+        p = Page()
+        self.response.write(p.print_out())
 
 class Page(object):
     def __init__(self):
@@ -75,7 +77,10 @@ class Page(object):
     </body>
 </html>'''
 
-#Rental property class object
+    def print_out(self):
+        return self.__open + self.__content + self.__close
+
+#Rental property class data object
 class Rental(object):
     def __init__(self):
         #attributes
