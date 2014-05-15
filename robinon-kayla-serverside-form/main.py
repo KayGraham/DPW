@@ -97,6 +97,8 @@ class MainHandler(webapp2.RequestHandler):
             city = self.request.GET['city']
             state = self.request.GET['state']
 
+            self.response.write(page_head + user + email + age + city + state + page_close)
+
         else:
             self.response.write(page_head + page_body + page_close)
 
