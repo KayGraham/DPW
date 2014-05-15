@@ -38,8 +38,17 @@ class MainHandler(webapp2.RequestHandler):
         #self.response.write("monthly profit $" + str(option3.monthly_profit))
         #self.response.write("annual profit $" + str(option3.annual_profit))
 
-       
+        #Option 4 Object
+        option4 = Rental()
+        option4.name = "Rental Property 4"
+        option4.mortgage_amount = 49000
+        option4.rent = 500
+        option4.calc_monthly_profit()
+        option4.calc_annual_profit()
+        #self.response.write("monthly profit $" + str(option4.monthly_profit))
+        #self.response.write("annual profit $" + str(option4.annual_profit))
 
+        
 
 class Page(object):
     def __init__(self):
