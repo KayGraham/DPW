@@ -89,8 +89,14 @@ class MainHandler(webapp2.RequestHandler):
 </html>
 '''
 
-        if self.request.Get:
-            pass
+        if self.request.GET:
+
+            user = self.request.GET['user']
+            email = self.request.GET['email']
+            age = self.request.GET['age']
+            city = self.request.GET['city']
+            state = self.request.GET['state']
+
         else:
             self.response.write(page_head + page_body + page_close)
 
