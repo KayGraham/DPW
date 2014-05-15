@@ -11,10 +11,11 @@ class MainHandler(webapp2.RequestHandler):
         option1 = Rental()
         option1.name = "Rental Property 1"
         option1.mortgage_amount = 30000
-        option1.rent = 400
+        option1.rent = 300
         option1.calc_monthly_profit()
-        #option1.calc_annual_profit()
-        self.reponse.write("monthly profit" + str(option1.monthly_profit))
+        option1.calc_annual_profit()
+        self.response.write("monthly profit $" + str(option1.monthly_profit))
+        self.response.write("annual profit $" + str(option1.annual_profit))
 
 #Rental property class object
 class Rental(object):
@@ -26,6 +27,7 @@ class Rental(object):
         self.__monthly_profit = 0
         self.__annual_profit = 0
 
+    #Calculate Monthly Profit
     @property
     def monthly_profit(self):
         return self.__monthly_profit
@@ -36,7 +38,20 @@ class Rental(object):
 
     def calc_monthly_profit(self):
         #calculate monthly profit
-        self.__monthly_profit = ((self.mortgage_amount / 12) - self.rent)
+        self.__monthly_profit = (self.rent - ((self.mortgage_amount / 10))/12)
+
+    #Calculate Annual Profit
+    @property
+    def annual_profit(self):
+        return self.__annual_profit
+
+    @annual_profit.setter
+    def annual_profit(self, new_annual_profit):
+        self.__annual_profit = new_annual_profit
+
+    def calc_annual_profit(self):
+        #calculate annual profit
+        self.__annual_profit = (self.monthly_profit * 12)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
