@@ -8,7 +8,9 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        #Option 1 Object
+        #Property Objects
+
+        #Property 1 Object
         option1 = Rental()
         option1.name = "Green Grove"
         option1.mortgage_amount = 30000
@@ -16,11 +18,10 @@ class MainHandler(webapp2.RequestHandler):
         option1.image = "images/rental1.png"
         option1.calc_monthly_profit()
         option1.calc_annual_profit()
-
         #self.response.write("monthly profit $" + str(option1.monthly_profit))
         #self.response.write("annual profit $" + str(option1.annual_profit))
 
-        #Option 2 Object
+        #Property 2 Object
         option2 = Rental()
         option2.name = "Heyworth"
         option2.mortgage_amount = 65000
@@ -28,11 +29,10 @@ class MainHandler(webapp2.RequestHandler):
         option2.image = "images/rental2.png"
         option2.calc_monthly_profit()
         option2.calc_annual_profit()
-
         #self.response.write("monthly profit $" + str(option2.monthly_profit))
         #self.response.write("annual profit $" + str(option2.annual_profit))
 
-        #Option 3 Object
+        #Property 3 Object
         option3 = Rental()
         option3.name = "Rosksbury"
         option3.mortgage_amount = 75000
@@ -40,11 +40,10 @@ class MainHandler(webapp2.RequestHandler):
         option3.image = "images/rental3.png"
         option3.calc_monthly_profit()
         option3.calc_annual_profit()
-
         #self.response.write("monthly profit $" + str(option3.monthly_profit))
         #self.response.write("annual profit $" + str(option3.annual_profit))
 
-        #Option 4 Object
+        #Property 4 Object
         option4 = Rental()
         option4.name = "Elm"
         option4.mortgage_amount = 49000
@@ -52,11 +51,10 @@ class MainHandler(webapp2.RequestHandler):
         option4.image = "images/rental4.png"
         option4.calc_monthly_profit()
         option4.calc_annual_profit()
-
         #self.response.write("monthly profit $" + str(option4.monthly_profit))
         #self.response.write("annual profit $" + str(option4.annual_profit))
 
-        #Option 5 Object
+        #Property 5 Object
         option5 = Rental()
         option5.name = "Savanna"
         option5.mortgage_amount = 95000
@@ -64,7 +62,6 @@ class MainHandler(webapp2.RequestHandler):
         option5.image = "images/rental5.png"
         option5.calc_monthly_profit()
         option5.calc_annual_profit()
-
         #self.response.write("monthly profit $" + str(option5.monthly_profit))
         #self.response.write("annual profit $" + str(option5.annual_profit))
 
@@ -82,6 +79,8 @@ class MainHandler(webapp2.RequestHandler):
             image = self.request.GET['image']
             monthly = self.request.GET['monthly']
             annual = self.request.GET['annual']
+
+            #message to add object data to html
             message = '''
             <div id="rental">
                 <div id="category"><strong>Property:</strong>
@@ -99,8 +98,11 @@ class MainHandler(webapp2.RequestHandler):
                 <img class ="rentImg" src="{image}" />
             </div>
             '''
+            #print message to html
             message = message.format(**locals())
             self.response.write(message)
+
+#create html page
 class Page(object):
     def __init__(self):
         self.__open = '''
@@ -120,7 +122,6 @@ class Page(object):
         </header>
         <div id="mainContent">
         <h2>Select a Property</h2>
-
         '''
         self.__close = '''
         </div>
@@ -128,6 +129,7 @@ class Page(object):
     </body>
 </html>'''
 
+        #array to hold objects
         self.__properties = []
 
     #Get properties
@@ -135,12 +137,14 @@ class Page(object):
     def properties(self):
         pass
 
+    #set proerties
     @properties.setter
     def properties(self, p):
         self.__properties = p
         self.links()
 
     def links(self):
+        #create links
         for properties in self.__properties:
             self.__content += '<a href="?name=' + properties.name + '&mortgage=' + str(properties.mortgage_amount) + '&rent=' + str(properties.rent) + '&image=' + properties.image + '&monthly=' + str(properties.monthly_profit) + '&annual=' + str(properties.annual_profit) + '">' + properties.name + '</a><br />'
 
