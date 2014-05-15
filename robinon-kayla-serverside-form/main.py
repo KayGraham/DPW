@@ -14,7 +14,7 @@ class MainHandler(webapp2.RequestHandler):
 <html>
     <head>
         <title></title>
-        <link href="" rel="stylesheet" type="text/css" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
     '''
