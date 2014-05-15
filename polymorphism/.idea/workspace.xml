@@ -26,12 +26,8 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="31" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.56478405" vertical-offset="0" max-vertical-offset="903">
-              <folding>
-                <element signature="e#400#597#0" expanded="false" />
-                <element signature="e#731#1231#0" expanded="false" />
-                <element signature="e#1337#1861#0" expanded="false" />
-              </folding>
+            <state line="60" column="34" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.7544007" vertical-offset="0" max-vertical-offset="1193">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,10 +47,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1329" />
-    <option name="y" value="23" />
+    <option name="x" value="1427" />
+    <option name="y" value="22" />
     <option name="width" value="1153" />
-    <option name="height" value="1000" />
+    <option name="height" value="1290" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -88,6 +84,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="inheritance" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inheritance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polymorphism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -229,8 +235,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1329" y="23" width="1153" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="1427" y="22" width="1153" height="1290" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -271,11 +277,7 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="21" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="1170">
-          <folding>
-            <element signature="e#400#597#0" expanded="false" />
-            <element signature="e#731#1231#0" expanded="false" />
-            <element signature="e#1337#1861#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -295,12 +297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="31" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.56478405" vertical-offset="0" max-vertical-offset="903">
-          <folding>
-            <element signature="e#400#597#0" expanded="false" />
-            <element signature="e#731#1231#0" expanded="false" />
-            <element signature="e#1337#1861#0" expanded="false" />
-          </folding>
+        <state line="60" column="34" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.7544007" vertical-offset="0" max-vertical-offset="1193">
+          <folding />
         </state>
       </provider>
     </entry>
