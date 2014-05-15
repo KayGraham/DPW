@@ -15,18 +15,31 @@ class MainHandler(webapp2.RequestHandler):
         option1.rent = 300
         option1.calc_monthly_profit()
         option1.calc_annual_profit()
-        self.response.write("monthly profit $" + str(option1.monthly_profit))
-        self.response.write("annual profit $" + str(option1.annual_profit))
+        #self.response.write("monthly profit $" + str(option1.monthly_profit))
+        #self.response.write("annual profit $" + str(option1.annual_profit))
 
         #Option 2 Object
         option2 = Rental()
         option2.name = "Rental Property 2"
-        option2.mortgage_amount = 60000
-        option2.rent = 400
+        option2.mortgage_amount = 65000
+        option2.rent = 550
         option2.calc_monthly_profit()
         option2.calc_annual_profit()
-        self.response.write("monthly profit $" + str(option2.monthly_profit))
-        self.response.write("annual profit $" + str(option2.annual_profit))
+        #self.response.write("monthly profit $" + str(option2.monthly_profit))
+        #self.response.write("annual profit $" + str(option2.annual_profit))
+
+        #Option 3 Object
+        option3 = Rental()
+        option3.name = "Rental Property 3"
+        option3.mortgage_amount = 75000
+        option3.rent = 650
+        option3.calc_monthly_profit()
+        option3.calc_annual_profit()
+        #self.response.write("monthly profit $" + str(option3.monthly_profit))
+        #self.response.write("annual profit $" + str(option3.annual_profit))
+
+       
+
 
 class Page(object):
     def __init__(self):
