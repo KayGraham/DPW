@@ -4,7 +4,7 @@ body {
     width: 960px;
     height: auto;
     margin: 0 auto;
-    font-family: "proxima-nova", "Helvetica Neue", HelveticaNeue, helvetica, arial, sans-serif;
+    font-family: "Helvetica Neue", HelveticaNeue, helvetica, arial, sans-serif;
 }
 body a {
     text-decoration: none;
@@ -22,7 +22,6 @@ header {
     height: 430px;
     margin: 0 auto;
     padding: 15px 0px 30px 0px;
-
 }
 header svg {
     float: left;
@@ -34,17 +33,17 @@ header h1 {
 #mainContent {
     clear: both;
     float: left;
-    width: 230px;
+    width: 220px;
     margin: 0 auto;
     padding: 10px 0px 0px 15px;
 }
 #rental {
     float: left;
-    width: 645px;
+    width: 635px;
     margin: 80px 0px 0px 15px;
     padding: 20px;
     background-color: #f7f7f7;
-    border: 1px solid lightgray;
+    border: 10px solid #ffffff;
 }
 .rentImg {
     float: left;
