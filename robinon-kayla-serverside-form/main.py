@@ -20,7 +20,10 @@ class MainHandler(webapp2.RequestHandler):
     '''
         page_body = '''
         <form method="GET">
+            <label>Name: </label><input type="text" name="user"/>
+            <label>Email: </label><input type="text" name="email"/>
 
+            <label>City: </label><input type="text" name="city"/>
         '''
         page_close = '''
         </form>
