@@ -82,13 +82,17 @@ class MainHandler(webapp2.RequestHandler):
             </select>
             <input type="submit" value="Submit" />
         '''
-        
+
         page_close = '''
         </form>
     </body>
 </html>
 '''
 
+        if self.request.Get:
+            pass
+        else:
+            self.response.write(page_head + page_body + page_close)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
