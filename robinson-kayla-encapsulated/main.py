@@ -18,6 +18,16 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write("monthly profit $" + str(option1.monthly_profit))
         self.response.write("annual profit $" + str(option1.annual_profit))
 
+        #Option 2 Object
+        option2 = Rental()
+        option2.name = "Rental Property 2"
+        option2.mortgage_amount = 60000
+        option2.rent = 400
+        option2.calc_monthly_profit()
+        option2.calc_annual_profit()
+        self.response.write("monthly profit $" + str(option2.monthly_profit))
+        self.response.write("annual profit $" + str(option2.annual_profit))
+
 class Page(object):
     def __init__(self):
         self.__open = '''
