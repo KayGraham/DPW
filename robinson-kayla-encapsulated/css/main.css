@@ -1,4 +1,75 @@
 body {
-color: #004a94;
-background-color: #f0f0f0;
+    color: #004a94;
+    background-color: #f0f0f0;
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "proxima-nova", "Helvetica Neue", HelveticaNeue, helvetica, arial, sans-serif;
+}
+body a {
+    text-decoration: none;
+    color: #00944B;
+}
+body a:hover {
+    text-decoration: underline;
+    color: #004a94;
+}
+h1, h2 {
+    font-family: Georgia, serif;
+}
+header {
+    width: 930px;
+    height: 430px;
+    margin: 0 auto;
+    padding: 15px 0px 30px 0px;
+
+}
+header svg {
+    float: left;
+}
+header h1 {
+    float: left;
+    padding-top: 25px;
+}
+#mainContent {
+    clear: both;
+    float: left;
+    width: 230px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+#rental {
+    float: left;
+    width: 645px;
+    margin: 70px 0px 0px 15px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid lightgray;
+}
+.rentImg {
+    float: left;
+    width: 200px
+    height: 164px;
+    margin-left: 30px;
+}
+#category {
+    width: 165px;
+    text-align:right;
+    float: left;
+    line-height: 120%;
+    font-size: 120%
+}
+#data {
+    width: 160px;
+    float: left;
+    line-height: 130%;
+    padding-left: 10px;
+    font-size: 120%
+}
+footer {
+    clear: both;
+    width: 930px;
+    height: 50px;
+    padding-top: 30px;
+   font-size: 80%;
 }

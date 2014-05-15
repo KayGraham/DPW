@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="49" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="2565">
+            <state line="82" column="13" selection-start="2732" selection-end="2732" vertical-scroll-proportion="0.5984704" vertical-offset="604" max-vertical-offset="2940">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="48" selection-end="48" vertical-scroll-proportion="0.029013539" vertical-offset="0" max-vertical-offset="1034">
+            <state line="55" column="14" selection-start="959" selection-end="959" vertical-scroll-proportion="-33.0" vertical-offset="0" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -51,13 +51,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1215" />
+    <option name="x" value="1355" />
     <option name="y" value="22" />
     <option name="width" value="1153" />
     <option name="height" value="1156" />
@@ -273,7 +273,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1215" y="22" width="1153" height="1156" extended-state="0" />
+    <frame x="1355" y="22" width="1153" height="1156" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -319,16 +319,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="49" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="2565">
+        <state line="55" column="14" selection-start="959" selection-end="959" vertical-scroll-proportion="-33.0" vertical-offset="0" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="48" selection-end="48" vertical-scroll-proportion="0.029013539" vertical-offset="0" max-vertical-offset="1034">
+        <state line="82" column="13" selection-start="2732" selection-end="2732" vertical-scroll-proportion="0.5984704" vertical-offset="604" max-vertical-offset="2940">
           <folding />
         </state>
       </provider>
