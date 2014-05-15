@@ -9,7 +9,16 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        page_head = '''
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    '''
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
