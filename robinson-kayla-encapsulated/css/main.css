@@ -36,12 +36,12 @@ header h1 {
     float: left;
     width: 230px;
     margin: 0 auto;
-    padding-left: 15px;
+    padding: 10px 0px 0px 15px;
 }
 #rental {
     float: left;
     width: 645px;
-    margin: 70px 0px 0px 15px;
+    margin: 80px 0px 0px 15px;
     padding: 20px;
     background-color: #f7f7f7;
     border: 1px solid lightgray;
@@ -51,6 +51,7 @@ header h1 {
     width: 200px
     height: 164px;
     margin-left: 30px;
+    border: 10px solid #ffffff;
 }
 #category {
     width: 165px;

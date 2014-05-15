@@ -137,7 +137,7 @@ class Page(object):
     def properties(self):
         pass
 
-    #set proerties
+    #set properties
     @properties.setter
     def properties(self, p):
         self.__properties = p

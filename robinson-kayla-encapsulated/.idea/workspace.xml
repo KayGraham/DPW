@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="21" selection-start="16804" selection-end="16804" vertical-scroll-proportion="0.2581262" vertical-offset="1920" max-vertical-offset="3000">
+            <state line="139" column="19" selection-start="16658" selection-end="16658" vertical-scroll-proportion="0.0" vertical-offset="1515" max-vertical-offset="3000">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="14" selection-start="959" selection-end="959" vertical-scroll-proportion="-33.0" vertical-offset="0" max-vertical-offset="1215">
+            <state line="53" column="14" selection-start="953" selection-end="953" vertical-scroll-proportion="0.59381044" vertical-offset="181" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -51,8 +51,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -319,16 +319,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="14" selection-start="959" selection-end="959" vertical-scroll-proportion="-33.0" vertical-offset="0" max-vertical-offset="1215">
+        <state line="139" column="19" selection-start="16658" selection-end="16658" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3000">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="21" selection-start="16804" selection-end="16804" vertical-scroll-proportion="0.2581262" vertical-offset="1920" max-vertical-offset="3000">
+        <state line="53" column="14" selection-start="953" selection-end="953" vertical-scroll-proportion="0.59381044" vertical-offset="181" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>
