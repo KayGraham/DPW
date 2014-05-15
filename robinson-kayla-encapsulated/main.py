@@ -65,6 +65,25 @@ class MainHandler(webapp2.RequestHandler):
         p.properties = [option1, option2, option3, option4, option5]
         self.response.write(p.print_out())
 
+        #Print data to html
+        if self.request.GET:
+            #var form url
+            name = self.request.GET['name']
+            mortgage = self.request.GET['mortgage']
+            rent = self.request.GET['rent']
+            monthly = self.request.GET['monthly']
+            annual = self.request.GET['annual']
+            message = '''
+            <p>
+            <strong>Property:</strong> {name}
+            <br /><strong>Mortgage:</strong> {mortgage}
+            <br /><strong>Rent:</strong> {rent}
+            <br /><strong>Monthly Profit:</strong> {monthly}
+            <br /><strong>Annual Profit:</strong> {annual}
+            </p>
+            '''
+            message = message.format(**locals())
+            self.response.write(message)
 class Page(object):
     def __init__(self):
         self.__open = '''
@@ -76,7 +95,7 @@ class Page(object):
     <body>
     '''
 
-        self.__content = ''
+        self.__content = '<h1>Select a Property</h1>'
         self.__close = '''
     </body>
 </html>'''
@@ -95,7 +114,7 @@ class Page(object):
 
     def links(self):
         for properties in self.__properties:
-            self.__content += '<a href="?name=' + properties.name + 'mortgage=' + str(properties.mortgage_amount) + 'rent=' + str(properties.rent) + 'monthly=' + str(properties.monthly_profit) + 'annual=' + str(properties.annual_profit) + '">' + properties.name + '</a><br />'
+            self.__content += '<a href="?name=' + properties.name + '&mortgage=' + str(properties.mortgage_amount) + '&rent=' + str(properties.rent) + '&monthly=' + str(properties.monthly_profit) + '&annual=' + str(properties.annual_profit)+ '">' + properties.name + '</a><br />'
 
     def print_out(self):
         return self.__open + self.__content + self.__close
