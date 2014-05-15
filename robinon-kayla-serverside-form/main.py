@@ -18,6 +18,11 @@ class MainHandler(webapp2.RequestHandler):
     </head>
     <body>
     '''
+        page_body = '''
+        <form method="GET">
+
+        '''
+
 
 
 app = webapp2.WSGIApplication([
