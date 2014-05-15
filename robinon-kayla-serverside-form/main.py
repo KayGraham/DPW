@@ -20,7 +20,7 @@ class MainHandler(webapp2.RequestHandler):
     '''
         page_body = '''
         <form method="GET">
-            <label>Name: </label><input type="text" name="user"/>
+            <input type="text" name="user" placeholder="First Name"/>
             <label>Email: </label><input type="text" name="email"/>
             <label>Age: </label><input type="checkbox" name="age" value="18-29">18-29<br>
             <input type="checkbox" name="age" value="30-39">30-39<br>
