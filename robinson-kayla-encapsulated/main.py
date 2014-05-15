@@ -8,6 +8,7 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #Option 1 Object
         option1 = Rental()
         option1.name = "Rental Property 1"
         option1.mortgage_amount = 30000
@@ -16,6 +17,22 @@ class MainHandler(webapp2.RequestHandler):
         option1.calc_annual_profit()
         self.response.write("monthly profit $" + str(option1.monthly_profit))
         self.response.write("annual profit $" + str(option1.annual_profit))
+
+class Page(object):
+    def __init__(self):
+        self.__open = '''
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rental Property Profit Calculator</title>
+    </head>
+    <body>
+    '''
+
+        self.__content = ''
+        self.__close = '''
+    </body>
+</html>'''
 
 #Rental property class object
 class Rental(object):
