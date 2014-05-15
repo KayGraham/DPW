@@ -83,6 +83,7 @@ class Page(object):
 
         self.__properties = []
 
+    #Get properties
     @property
     def properties(self):
         pass
@@ -94,7 +95,7 @@ class Page(object):
 
     def links(self):
         for properties in self.__properties:
-            self.__content += '<a href="?name=' + properties.name +'">' + properties.name + '</a><br />'
+            self.__content += '<a href="?name=' + properties.name + 'mortgage=' + str(properties.mortgage_amount) + 'rent=' + str(properties.rent) + 'monthly=' + str(properties.monthly_profit) + 'annual=' + str(properties.annual_profit) + '">' + properties.name + '</a><br />'
 
     def print_out(self):
         return self.__open + self.__content + self.__close

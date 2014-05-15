@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4a165e5a-9442-45bc-b2a2-c6146cbf4451" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robinson-kayla-encapsulated/main.py" afterPath="$PROJECT_DIR$/robinson-kayla-encapsulated/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes-getter-setter/.idea/workspace.xml" afterPath="$PROJECT_DIR$/classes-getter-setter/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data-objects/.idea/workspace.xml" afterPath="$PROJECT_DIR$/data-objects/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getters-setters/.idea/workspace.xml" afterPath="$PROJECT_DIR$/getters-setters/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inheritance/.idea/workspace.xml" afterPath="$PROJECT_DIR$/inheritance/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robinson-kayla-encapsulated/.idea/workspace.xml" afterPath="$PROJECT_DIR$/robinson-kayla-encapsulated/.idea/workspace.xml" />
     </list>
     <ignored path="DPW.iws" />
@@ -338,7 +343,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple-login/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="42" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680" />
+        <state line="72" column="42" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes-html/css/main.css">
@@ -373,7 +380,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple-login/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="305" selection-end="305" vertical-scroll-proportion="0.23255815" vertical-offset="0" max-vertical-offset="1680" />
+        <state line="14" column="34" selection-start="305" selection-end="305" vertical-scroll-proportion="0.23255815" vertical-offset="0" max-vertical-offset="1680">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes-getter-setter/main.py">
