@@ -52,7 +52,7 @@ class MainHandler(webapp2.RequestHandler):
         option5 = Rental()
         option5.name = "Rental Property 5"
         option5.mortgage_amount = 95000
-        option5.rent = 750
+        option5.rent = 825
         option5.calc_monthly_profit()
         option5.calc_annual_profit()
         self.response.write("monthly profit $" + str(option5.monthly_profit))
