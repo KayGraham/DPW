@@ -58,10 +58,11 @@ class MainHandler(webapp2.RequestHandler):
         #self.response.write("monthly profit $" + str(option5.monthly_profit))
         #self.response.write("annual profit $" + str(option5.annual_profit))
 
-        #Array to hold the 5 objects
-        properties = [option1, option2, option3, option4, option5]
+
 
         p = Page()
+        #Array to hold the 5 objects
+        p.properties = [option1, option2, option3, option4, option5]
         self.response.write(p.print_out())
 
 class Page(object):
@@ -83,7 +84,17 @@ class Page(object):
         self.__properties = []
 
     @property
-    def
+    def properties(self):
+        pass
+
+    @properties.setter
+    def properties(self, p):
+        self.__properties = p
+        self.links()
+
+    def links(self):
+        for properties in self.__properties:
+            self.__content += '<a href="?name=' + properties.name +'">' + properties.name + '</a><br />'
 
     def print_out(self):
         return self.__open + self.__content + self.__close
