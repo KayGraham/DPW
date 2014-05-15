@@ -26,7 +26,16 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="38" selection-start="16255" selection-end="16255" vertical-scroll-proportion="0.60229445" vertical-offset="1155" max-vertical-offset="3000">
+            <state line="140" column="22" selection-start="16659" selection-end="16659" vertical-scroll-proportion="0.64531547" vertical-offset="1425" max-vertical-offset="3000">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="13" selection-start="714" selection-end="714" vertical-scroll-proportion="-18.36" vertical-offset="156" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -79,7 +88,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -128,6 +136,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunManager">
@@ -264,7 +273,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1355" y="22" width="1153" height="1156" extended-state="0" />
+    <frame x="1355" y="22" width="1153" height="1156" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -312,14 +321,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="13" selection-start="714" selection-end="714" vertical-scroll-proportion="0.4197292" vertical-offset="181" max-vertical-offset="1215">
+        <state line="41" column="13" selection-start="714" selection-end="714" vertical-scroll-proportion="-18.36" vertical-offset="156" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="38" selection-start="16255" selection-end="16255" vertical-scroll-proportion="0.60229445" vertical-offset="1155" max-vertical-offset="3000">
+        <state line="140" column="22" selection-start="16659" selection-end="16659" vertical-scroll-proportion="0.64531547" vertical-offset="1425" max-vertical-offset="3000">
           <folding />
         </state>
       </provider>
