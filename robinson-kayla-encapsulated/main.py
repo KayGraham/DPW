@@ -58,6 +58,9 @@ class MainHandler(webapp2.RequestHandler):
         #self.response.write("monthly profit $" + str(option5.monthly_profit))
         #self.response.write("annual profit $" + str(option5.annual_profit))
 
+        #Array to hold the 5 objects
+        properties = [option1, option2, option3, option4, option5]
+
         p = Page()
         self.response.write(p.print_out())
 
@@ -76,6 +79,11 @@ class Page(object):
         self.__close = '''
     </body>
 </html>'''
+
+        self.__properties = []
+
+    @property
+    def
 
     def print_out(self):
         return self.__open + self.__content + self.__close
