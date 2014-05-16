@@ -9,6 +9,7 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #Setup page head
         page_head = '''
 <!DOCTYPE HTML>
 <html>
@@ -23,6 +24,7 @@ class MainHandler(webapp2.RequestHandler):
             <p>Sign up for exclusive deals and coupons!</p></div>
         </header>
     '''
+         #Setup page body
         page_body = '''
         <div id="signUp">
         <form method="GET">
@@ -98,24 +100,26 @@ class MainHandler(webapp2.RequestHandler):
                 <input type="submit" value="Sign Up" />
             </div>
         '''
-
+        #Setup page close
         page_close = '''
         </form></div>
     </body>
 </html>
 '''
-
+        #Get var form url
         if self.request.GET:
-
+            #vars from url
             user = self.request.GET['user']
             email = self.request.GET['email']
             age = self.request.GET['age']
             city = self.request.GET['city']
             state = self.request.GET['state']
-
+            #print information entered on to html
             self.response.write(page_head + '<div id="confirm">' + '<div id="info"><div id="labels"> <label>Name: </label><br /><label>Email: </label><br /><label>Age: </label><br /><label>City: </label><br /> <label>State: </label>' +  '</div><div id="userInfo">' + user + '<br />' + email + '<br />' + age + '<br />' + city + '<br />' + state + '</div></div>' + page_close)
 
+        #if form not submitted print
         else:
+            #print page
             self.response.write(page_head + page_body + page_close)
 
 app = webapp2.WSGIApplication([
