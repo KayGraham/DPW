@@ -102,7 +102,8 @@ class MainHandler(webapp2.RequestHandler):
         '''
         #Setup page close
         page_close = '''
-        </form></div>
+        </form>
+        </div>
     </body>
 </html>
 '''
@@ -115,7 +116,7 @@ class MainHandler(webapp2.RequestHandler):
             city = self.request.GET['city']
             state = self.request.GET['state']
             #print information entered on to html
-            self.response.write(page_head + '<div id="confirm">' + '<div id="info"><div id="labels"> <label>Name: </label><br /><label>Email: </label><br /><label>Age: </label><br /><label>City: </label><br /> <label>State: </label>' +  '</div><div id="userInfo">' + user + '<br />' + email + '<br />' + age + '<br />' + city + '<br />' + state + '</div></div>' + page_close)
+            self.response.write(page_head + '<div id="confirm"><div id="info"><div id="labels"> <label>Name: </label><br /><label>Email: </label><br /><label>Age: </label><br /><label>City: </label><br /> <label>State: </label></div><div id="userInfo">' + user + '<br />' + email + '<br />' + age + '<br />' + city + '<br />' + state + '</div></div>' + page_close)
 
         #if form not submitted print
         else:
