@@ -13,28 +13,34 @@ class MainHandler(webapp2.RequestHandler):
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title></title>
+        <title>Savvy Shoppers</title>
         <link href="css/main.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <header>
+            <img src="images/logo.png" alt="Savvy Shopper" height="95px"/>
+            <div id="shop"><h1>Savvy Shoppers</h1>
+            <p>Sign up for exclusive deals and coupons!</p></div>
+        </header>
     '''
         page_body = '''
+        <div id="signUp">
         <form method="GET">
             <div id="labels">
-                <label>Name: </label>
-                <label>Email: </label>
-                <label>Age: </label>
-                <label>City: </label>
+                <label>Name: </label><br />
+                <label>Email: </label><br />
+                <label>Age: </label><br /><br /><br /><br /><br />
+                <label>City: </label><br />
                 <label>State: </label>
             </div>
             <div id="inputs">
-                <input type="text" name="user" />
-                <input type="text" name="email"/>
+                <input type="text" name="user" /><br />
+                <input type="text" name="email"/><br />
                 <input type="checkbox" name="age" value="18-29">18-29<br>
                 <input type="checkbox" name="age" value="30-39">30-39<br>
                 <input type="checkbox" name="age" value="40-49">40-49<br>
-                <input type="checkbox" name="age" value="50+">50+
-                <input type="text" name="city"/>
+                <input type="checkbox" name="age" value="50+">50+<br />
+                <input type="text" name="city"/><br />
                 <select name="state">
                     <option value="Alabama">Alabama</option>
                     <option value="Alaska">Alaska</option>
@@ -89,12 +95,12 @@ class MainHandler(webapp2.RequestHandler):
                 </select>
             </div>
             <div id="submit">
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Sign Up" />
             </div>
         '''
 
         page_close = '''
-        </form>
+        </form></div>
     </body>
 </html>
 '''
@@ -107,7 +113,7 @@ class MainHandler(webapp2.RequestHandler):
             city = self.request.GET['city']
             state = self.request.GET['state']
 
-            self.response.write(page_head + user + email + age + city + state + page_close)
+            self.response.write(page_head + '<div id="confirm">' + '<div id="info"><div id="labels"> <label>Name: </label><br /><label>Email: </label><br /><label>Age: </label><br /><label>City: </label><br /> <label>State: </label>' +  '</div><div id="userInfo">' + user + '<br />' + email + '<br />' + age + '<br />' + city + '<br />' + state + '</div></div>' + page_close)
 
         else:
             self.response.write(page_head + page_body + page_close)
