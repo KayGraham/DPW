@@ -121,7 +121,7 @@ class Panda(Page):
         print self._panda
 
     def print_out(self):
-        return self._head + self._body + self._panda + '<div id="say"><h3>What does the Zebra say?</h3><p>"bleat"</p></div>' + self._close
+        return self._head + self._body + self._panda + '<div id="say"><h3>What does the Giant Panda say?</h3><p>"bleat"</p></div>' + self._close
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
