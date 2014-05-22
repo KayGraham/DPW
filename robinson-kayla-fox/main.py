@@ -52,6 +52,32 @@ class RedFox(Page):
 
     def print_out(self):
         return self._head + self._body + self._red_fox + '<div id="say"><h3>What does the Red Fox say?</h3><p>"Wa-pa-pa-pa-pa-pa-pow"</p></div>' + self._close
+
+class Zebra(Page):
+    def __init__(self):
+        super(Zebra, self).__init__()
+        self._zebra_name = 'Zebra'
+        self._zebra_phylum = 'Chordata'
+        self._zebra_class = 'Mammalia'
+        self._zebra_order = 'Perissodactyla'
+        self._zebra_family = 'Equidae'
+        self._zebra_genus = 'Equus'
+        self._zebra_image = 'http://www.nhptv.org/natureworks/graphics/redfox1sm.jpg'
+        self._zebra_lifespan = '20-30 years'
+        self._zebra_habitat = 'Grassy Plains, open woodlands and grassy mountain slopes'
+        self._zebra_geolocation = 'Africa'
+        self._zebra = ''
+        self._zebra_info = [self._zebra_name, self._zebra_phylum, self._zebra_class, self._zebra_order, self._zebra_family, self._zebra_genus, self._zebra_image, self._zebra_lifespan, self._zebra_habitat, self._zebra_geolocation]
+
+        self._zebra += '<h2>' + self._zebra_info[0] + '</h2>' + '<p><strong>Phylum:</strong> ' + self._zebra_info[1] + '</p><p><strong>Class:</strong> ' + self._zebra_info[2] + '</p><p><strong>Order:</strong> ' + self._zebra_info[3] + '</p><p><strong>Family:</strong> ' + self._zebra_info[4] + '</p><p><strong>Genus:</strong> ' + self._zebra_info[5] + '</p><p><strong>Image:</strong> ' + self._zebra_info[6] + '</p><p><strong>Average Lifespan:</strong> ' + self._zebra_info[7] + '</p><p><strong>Habitat:</strong> ' + self._zebra_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._zebra_info[9]
+
+        print self._zebra
+
+    def print_out(self):
+        return self._head + self._body + self._zebra + '<div id="say"><h3>What does the Zebra say?</h3><p>"Yip"</p></div>' + self._close
+
+
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
