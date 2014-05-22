@@ -9,25 +9,8 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        pass
 
-        if self.request.GET:
-            name = self.request.GET['name']
-            fox = 'red'
-            zebra = 'zebra'
-            panda = 'panda'
-
-            if name == fox:
-                p = RedFox()
-                self.response.write(p.print_out())
-            elif name == zebra:
-                p = Zebra()
-                self.response.write(p.print_out())
-            elif name == panda:
-                p = Panda()
-                self.response.write(p.print_out())
-        else:
-            p = Select()
-            self.response.write(p.print_out())
 
 
 class Page(object):
@@ -62,6 +45,19 @@ class Page(object):
         '''
     def print_out(self):
         return self._head + self._body + self._close
+
+class Animal(object):
+    def __init__(self):
+        self.animal_name = ''
+        self.animal_phylum = ''
+        self.animal_class = ''
+        self.animal_order = ''
+        self.animal_family = ''
+        self.animal_genus = ''
+        self.animal_image = ''
+        self.animal_lifespan = ''
+        self.animal_habitat = ''
+        self.animal_geolocation = ''
 
 class RedFox(Page):
     def __init__(self):
