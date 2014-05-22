@@ -36,6 +36,7 @@ class Page(object):
 <html>
     <head>
         <title>What does the fox say?</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         '''
