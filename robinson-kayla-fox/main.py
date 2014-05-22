@@ -9,8 +9,6 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        #p = RedFox()
-        #self.response.write(p.print_out())
 
         if self.request.GET:
             name = self.request.GET['name']
