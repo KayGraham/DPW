@@ -39,7 +39,12 @@ class Page(object):
     </head>
     <body>
         '''
-        self._body = '<div id="animals">'
+        self._body = '''
+        <header>
+
+        </header>
+        <div id="animals">
+        '''
         self._close = '''
         </div>
     </body>
