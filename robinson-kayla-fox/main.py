@@ -9,6 +9,8 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #p = RedFox()
+        #self.response.write(p.print_out())
 
         if self.request.GET:
             name = self.request.GET['name']
@@ -27,6 +29,7 @@ class MainHandler(webapp2.RequestHandler):
                 self.response.write(p.print_out())
             else:
                 pass
+
 
 class Page(object):
     def __init__(self):
@@ -115,8 +118,6 @@ class Panda(Page):
 
     def print_out(self):
         return self._head + self._body + self._panda + '<div id="say"><h3>What does the Zebra say?</h3><p>"bleat"</p></div>' + self._close
-
-
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
