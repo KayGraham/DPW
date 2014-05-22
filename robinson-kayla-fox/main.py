@@ -25,8 +25,9 @@ class MainHandler(webapp2.RequestHandler):
             elif name == panda:
                 p = Panda()
                 self.response.write(p.print_out())
-            else:
-                pass
+        else:
+            p = Select()
+            self.response.write(p.print_out())
 
 
 class Page(object):
@@ -44,13 +45,14 @@ class Page(object):
         <header>
             <img src="images/logo.png" alt="Albany Zoo" width="800px"/>
         </header>
-        <div id="links">
+        <nav>
             <ul>
+                <h2>Select an Animal</h2>
                 <li><a href="?name=red">Red Fox</a></li>
                 <li><a href="?name=zebra">Zebra</a></li>
                 <li><a href="?name=panda">Giant Panda</a></li>
             </ul>
-        </div>
+        </nav>
         <div id="animals">
         '''
         self._close = '''
@@ -129,6 +131,34 @@ class Panda(Page):
 
     def print_out(self):
         return self._head + self._body + self._panda + '<div id="say"><h3>What does the Giant Panda say?</h3><p>"bleat"</p></div>' + self._close
+
+class Select(Page):
+    def __init__(self):
+        super(Select, self).__init__()
+        self._body ='''
+        <header>
+            <img src="images/logo.png" alt="Albany Zoo" width="800px"/>
+        </header>
+
+        <nav>
+
+            <ul>
+                <h2>Select an Animal</h2>
+                <li><a href="?name=red">Red Fox</a></li>
+                <li><a href="?name=zebra">Zebra</a></li>
+                <li><a href="?name=panda">Giant Panda</a></li>
+            </ul>
+        </nav>
+        '''
+        self._close = '''
+    </body>
+</html>
+        '''
+
+        print self._body
+
+    def print_out(self):
+        return self._head + self._body + self._close
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

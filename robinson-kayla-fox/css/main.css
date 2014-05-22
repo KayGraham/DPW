@@ -1,25 +1,62 @@
 body {
-width: 960px;
-height: auto;
-margin: 0 auto;
-font-family: Verdana;
-
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    font-family: Verdana;
 }
 header {
     width: 800px;
     margin: 0 auto;
     padding-top: 15px;
 }
+nav {
+    width: 800px;
+    height: 120px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+}
+ul
+{
+    list-style-type:none;
+    width: 445px;
+    margin:0 auto;
+    padding:0;
+}
+li {
+    width: 138px;
+    height: 50px;
+    background: black;
+    margin: 5px;
+    float:left;
+}
+a
+{
+    display:block;
+    width:auto;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 120%;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #0070BB;
+}
 #animals {
     width: 780px;
     height: auto;
     margin: 0 auto;
     background-color: #0070BB;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 2px 10px;
+
+    clear: both;
 }
 #animals img {
     border-style: double;
     border-color: white;
     float: right;
-
+    width: 430px;
+    margin: 0px 5px 0px 5px;
 }
