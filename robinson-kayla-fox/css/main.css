@@ -1,3 +1,10 @@
 body {
-background-color: blue;
+width: 960px;
+height: auto;
+margin: 0 auto;
+
+}
+header {
+    width: 800px;
+    margin: 0 auto;
 }
