@@ -2,10 +2,24 @@ body {
 width: 960px;
 height: auto;
 margin: 0 auto;
+font-family: Verdana;
 
 }
 header {
     width: 800px;
     margin: 0 auto;
     padding-top: 15px;
+}
+#animals {
+    width: 780px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #0070BB;
+    padding: 0px 10px 0px 10px;
+}
+#animals img {
+    border-style: double;
+    border-color: white;
+    float: right;
+
 }

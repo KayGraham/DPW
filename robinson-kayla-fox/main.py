@@ -44,6 +44,13 @@ class Page(object):
         <header>
             <img src="images/logo.png" alt="Albany Zoo" width="800px"/>
         </header>
+        <div id="links">
+            <ul>
+                <li><a href="?name=red">Red Fox</a></li>
+                <li><a href="?name=zebra">Zebra</a></li>
+                <li><a href="?name=panda">Giant Panda</a></li>
+            </ul>
+        </div>
         <div id="animals">
         '''
         self._close = '''
@@ -70,7 +77,7 @@ class RedFox(Page):
         self._red_fox = ''
         self._red_info = [self._red_name, self._red_phylum, self._red_class, self._red_order, self._red_family, self._red_genus, self._red_image, self._red_lifespan, self._red_habitat, self._red_geolocation]
 
-        self._red_fox += '<h2>' + self._red_info[0] + '</h2>' + '<p><strong>Phylum:</strong> ' + self._red_info[1] + '</p><p><strong>Class:</strong> ' + self._red_info[2] + '</p><p><strong>Order:</strong> ' + self._red_info[3] + '</p><p><strong>Family:</strong> ' + self._red_info[4] + '</p><p><strong>Genus:</strong> ' + self._red_info[5] + '</p><img src=" ' + self._red_info[6] + '" /><p><strong>Average Lifespan:</strong> ' + self._red_info[7] + '</p><p><strong>Habitat:</strong> ' + self._red_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._red_info[9]
+        self._red_fox += '<h2>' + self._red_info[0] + '</p><img src=" ' + self._red_info[6] + '" /></h2>' + '<p><strong>Phylum:</strong> ' + self._red_info[1] + '</p><p><strong>Class:</strong> ' + self._red_info[2] + '</p><p><strong>Order:</strong> ' + self._red_info[3] + '</p><p><strong>Family:</strong> ' + self._red_info[4] + '</p><p><strong>Genus:</strong> ' + self._red_info[5] + '" </p><p><strong>Average Lifespan:</strong> ' + self._red_info[7] + '</p><p><strong>Habitat:</strong> ' + self._red_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._red_info[9]
 
         print self._red_fox
 
@@ -93,7 +100,7 @@ class Zebra(Page):
         self._zebra = ''
         self._zebra_info = [self._zebra_name, self._zebra_phylum, self._zebra_class, self._zebra_order, self._zebra_family, self._zebra_genus, self._zebra_image, self._zebra_lifespan, self._zebra_habitat, self._zebra_geolocation]
 
-        self._zebra += '<h2>' + self._zebra_info[0] + '</h2>' + '<p><strong>Phylum:</strong> ' + self._zebra_info[1] + '</p><p><strong>Class:</strong> ' + self._zebra_info[2] + '</p><p><strong>Order:</strong> ' + self._zebra_info[3] + '</p><p><strong>Family:</strong> ' + self._zebra_info[4] + '</p><p><strong>Genus:</strong> ' + self._zebra_info[5] + '</p><img src=" ' + self._zebra_info[6] + '" /><p><strong>Average Lifespan:</strong> ' + self._zebra_info[7] + '</p><p><strong>Habitat:</strong> ' + self._zebra_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._zebra_info[9]
+        self._zebra += '<h2>' + self._zebra_info[0] + '</p><img src=" ' + self._zebra_info[6] + '" /></h2>' + '<p><strong>Phylum:</strong> ' + self._zebra_info[1] + '</p><p><strong>Class:</strong> ' + self._zebra_info[2] + '</p><p><strong>Order:</strong> ' + self._zebra_info[3] + '</p><p><strong>Family:</strong> ' + self._zebra_info[4] + '</p><p><strong>Genus:</strong> ' + self._zebra_info[5] + '" </p><p><strong>Average Lifespan:</strong> ' + self._zebra_info[7] + '</p><p><strong>Habitat:</strong> ' + self._zebra_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._zebra_info[9]
 
         print self._zebra
 
@@ -116,7 +123,7 @@ class Panda(Page):
         self._panda = ''
         self._panda_info = [self._panda_name, self._panda_phylum, self._panda_class, self._panda_order, self._panda_family, self._panda_genus, self._panda_image, self._panda_lifespan, self._panda_habitat, self._panda_geolocation]
 
-        self._panda += '<h2>' + self._panda_info[0] + '</h2>' + '<p><strong>Phylum:</strong> ' + self._panda_info[1] + '</p><p><strong>Class:</strong> ' + self._panda_info[2] + '</p><p><strong>Order:</strong> ' + self._panda_info[3] + '</p><p><strong>Family:</strong> ' + self._panda_info[4] + '</p><p><strong>Genus:</strong> ' + self._panda_info[5] + '</p><img src=" ' + self._panda_info[6] + '" /><p><strong>Average Lifespan:</strong> ' + self._panda_info[7] + '</p><p><strong>Habitat:</strong> ' + self._panda_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._panda_info[9]
+        self._panda += '<h2>' + self._panda_info[0] + '</p><img src=" ' + self._panda_info[6] + '" /></h2>' + '<p><strong>Phylum:</strong> ' + self._panda_info[1] + '</p><p><strong>Class:</strong> ' + self._panda_info[2] + '</p><p><strong>Order:</strong> ' + self._panda_info[3] + '</p><p><strong>Family:</strong> ' + self._panda_info[4] + '</p><p><strong>Genus:</strong> ' + self._panda_info[5] + '" </p><p><strong>Average Lifespan:</strong> ' + self._panda_info[7] + '</p><p><strong>Habitat:</strong> ' + self._panda_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._panda_info[9]
 
         print self._panda
 
