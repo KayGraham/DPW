@@ -9,7 +9,24 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        pass
+
+        if self.request.GET:
+            name = self.request.GET['name']
+            fox = 'red'
+            zebra = 'zebra'
+            panda = 'panda'
+
+            if name == fox:
+                p = RedFox()
+                self.response.write(p.print_out())
+            elif name == zebra:
+                p = Zebra()
+                self.response.write(p.print_out())
+            elif name == panda:
+                p = Panda()
+                self.response.write(p.print_out())
+            else:
+                pass
 
 class Page(object):
     def __init__(self):
