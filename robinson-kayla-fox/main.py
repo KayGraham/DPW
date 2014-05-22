@@ -76,6 +76,29 @@ class Zebra(Page):
     def print_out(self):
         return self._head + self._body + self._zebra + '<div id="say"><h3>What does the Zebra say?</h3><p>"Yip"</p></div>' + self._close
 
+class Panda(Page):
+    def __init__(self):
+        super(Panda, self).__init__()
+        self._panda_name = 'Giant Panda'
+        self._panda_phylum = 'Chordata'
+        self._panda_class = 'Mammalia'
+        self._panda_order = 'Carnivora'
+        self._panda_family = 'Ursidae'
+        self._panda_genus = 'Ailuropoda'
+        self._panda_image = 'http://www.nhptv.org/natureworks/graphics/redfox1sm.jpg'
+        self._panda_lifespan = '20 years'
+        self._panda_habitat = 'Bamboo Forests'
+        self._panda_geolocation = 'Western China'
+        self._panda = ''
+        self._panda_info = [self._panda_name, self._panda_phylum, self._panda_class, self._panda_order, self._panda_family, self._panda_genus, self._panda_image, self._panda_lifespan, self._panda_habitat, self._panda_geolocation]
+
+        self._panda += '<h2>' + self._panda_info[0] + '</h2>' + '<p><strong>Phylum:</strong> ' + self._panda_info[1] + '</p><p><strong>Class:</strong> ' + self._panda_info[2] + '</p><p><strong>Order:</strong> ' + self._panda_info[3] + '</p><p><strong>Family:</strong> ' + self._panda_info[4] + '</p><p><strong>Genus:</strong> ' + self._panda_info[5] + '</p><p><strong>Image:</strong> ' + self._panda_info[6] + '</p><p><strong>Average Lifespan:</strong> ' + self._panda_info[7] + '</p><p><strong>Habitat:</strong> ' + self._panda_info[8] + '</p><p><strong>Geolocation:</strong> ' + self._panda_info[9]
+
+        print self._panda
+
+    def print_out(self):
+        return self._head + self._body + self._panda + '<div id="say"><h3>What does the Zebra say?</h3><p>"bleat"</p></div>' + self._close
+
 
 
 app = webapp2.WSGIApplication([
