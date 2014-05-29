@@ -36,6 +36,30 @@ class MainHandler(webapp2.RequestHandler):
 
             self.response.write(p.print_out())
 
+class VenueView(object):
+    '''Handles how user is shown data'''
+    def __init__(self):
+        self.__vdos = []
+        self.__content = '<br />'
+
+    def update(self):
+        for do in self.__vdos:
+            self.__content += do.name + "Address: " + do.locality + "<br />" + do.region + "<br />"
+
+    @property
+    def content(self):
+        return self.__content
+
+    @property
+    def vdos(self):
+        pass
+
+    @vdos.setter
+    def vdos(self, arr):
+        self.__vdos = arr
+        self.update()
+        
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
