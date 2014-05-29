@@ -125,6 +125,21 @@ class VenueData(object):
         self.cat = ''
         self.url = ''
 
+class Page(object):
+    def __init__(self):
+        self._head = '''
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>'''
+        self._body = ''
+        self._close = '''
+    </body>
+</html>'''
+
+    def print_out(self):
+        return self._head + self._body + self._close
 
 
 
