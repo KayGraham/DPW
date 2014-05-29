@@ -10,7 +10,7 @@ import json
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
-        p.inputs = [['category', 'text', 'Spa, restaurant'],['locality', 'text', 'city'],['region', 'text', 'state'],['Submit', 'submit']]
+        p.inputs = [['category', 'text', 'Spa, restaurant'],['locality', 'text', 'city'],['region', 'text', 'state'],['postal_code', 'text', 'zip code'],['Submit', 'submit']]
 
         if self.request.GET:
             #Create Venue Model
@@ -44,7 +44,7 @@ class VenueView(object):
 
     def update(self):
         for do in self.__vdos:
-            self.__content += do.name + "Address: " + do.locality + "<br />" + do.region + "<br />"
+            self.__content += "<h2>" + do.name + "</h2>" + "<br />Address: " + do.address + "<br />" + do.state + ", " + do.zip + do.phone +"<br />"
 
     @property
     def content(self):
@@ -66,9 +66,10 @@ class VenueModel(object):
         self.__category = ''
         self.__locality = ''
         self.__region = ''
+        self.__postal_code = ''
 
     def callApi(self):
-        json_obj = urllib2.urlopen(self.__url + self.__category + '&' + self.__locality + '&' + self.__region + '&' + self.__api_key)
+        json_obj = urllib2.urlopen(self.__url + self.__locality + '&' + self.__region + '&' + self.__postal_code + '&' + self.__category + '&' + self.__api_key)
         data = json.load((json_obj))
 
         self._dos = []
@@ -119,7 +120,6 @@ class VenueData(object):
         self.name = ''
         self.locality = ''
         self.address = ''
-        self.state = ''
         self.state = ''
         self.zip = ''
         self.phone = ''
