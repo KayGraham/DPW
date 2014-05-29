@@ -66,7 +66,7 @@ class VenueModel(object):
         self.__category = ''
         self.__locality = ''
         self.__region = ''
-
+        print self.__url + self.__category + '&' + self.__locality + '&' + self.__region + '&' + self.__api_key
     def callApi(self):
         json_obj = urllib2.urlopen(self.__url + self.__category + '&' + self.__locality + '&' + self.__region + '&' + self.__api_key)
         data = json.load((json_obj))
@@ -120,7 +120,7 @@ class VenueData(object):
         self.locality = ''
         self.address = ''
         self.state = ''
-        self.state = ''
+        self.region = ''
         self.zip = ''
         self.phone = ''
         self.cat = ''
