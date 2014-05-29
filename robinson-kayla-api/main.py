@@ -112,6 +112,18 @@ class VenueModel(object):
     def region(self, r):
         self.__region = r
 
+class VenueData(object):
+    '''Holds data from model and shown in view'''
+    def __init__(self):
+        self.name = ''
+        self.locality = ''
+        self.address = ''
+        self.state = ''
+        self.state = ''
+        self.zip = ''
+        self.phone = ''
+        self.cat = ''
+        self.url = ''
 
 
 
