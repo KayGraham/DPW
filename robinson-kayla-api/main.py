@@ -13,21 +13,15 @@ class MainHandler(webapp2.RequestHandler):
         p.inputs = [['category', 'text', 'Spa, restaurant'],['locality', 'text', 'city'],['region', 'text', 'state'],['Submit', 'submit']]
 
         if self.request.GET:
-
-
             #Create Venue Model
             vm = VenueModel()
 
-            name = self.request.GET['category']
-            print name
             #Sends category from url to the model
-            #vm.category = self.request.GET['category']
             vm.category = self.request.GET['category']
             #Sends city from url to the model
             vm.locality = self.request.GET['locality']
             #Sends state from url to the model
             vm.region = self.request.GET['region']
-
 
             #Connect to API
             vm.callApi()
@@ -50,7 +44,7 @@ class VenueView(object):
 
     def update(self):
         for do in self.__vdos:
-            self.__content += "<h3>" + do.name + "</h3> Address: " + do.address + " " + do.state + ", " + do.zip + "<br /> Phone: " + do.phone
+            self.__content += do.name + "Address: " + do.locality + "<br />" + do.region + "<br />"
 
     @property
     def content(self):
@@ -67,21 +61,15 @@ class VenueView(object):
 
 class VenueModel(object):
     def __init__(self):
-        self.__url = 'https://api.locu.com/v1_0/venue/search/?locality='
+        self.__url = 'https://api.locu.com/v1_0/venue/search/?'
+        self.__api_key = 'api_key=849008c80e7e8d249fc632d2ef3d070eea056759'
         self.__category = ''
-        print self.__category
         self.__locality = ''
         self.__region = ''
-        self.__api_key = 'api_key=849008c80e7e8d249fc632d2ef3d070eea056759'
-        self.full_url = self.__url + self.__locality + '&region=' + self.__region + '&category=' + self.__category + '&' + self.__api_key
-        print self.full_url
 
     def callApi(self):
-        request = urllib2.Request('https://api.locu.com/v1_0/venue/search/?locality=Albany&category=spa&api_key=849008c80e7e8d249fc632d2ef3d070eea056759')
-        opener = urllib2.build_opener()
-        result = opener.open(request)
-
-        data = json.load(result)
+        json_obj = urllib2.urlopen(self.__url + self.__category + '&' + self.__locality + '&' + self.__region + '&' + self.__api_key)
+        data = json.load((json_obj))
 
         self._dos = []
 
@@ -131,6 +119,7 @@ class VenueData(object):
         self.name = ''
         self.locality = ''
         self.address = ''
+        self.state = ''
         self.state = ''
         self.zip = ''
         self.phone = ''
