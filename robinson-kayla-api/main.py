@@ -10,7 +10,7 @@ import json
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
-        p.inputs = [['category', 'text', 'category'],['city', 'text', 'locality'],['state', 'text', 'region'],['Submit', 'submit']]
+        p.inputs = [['category', 'text', 'Spa, restaurant'],['locality', 'text', 'city'],['region', 'text', 'state'],['Submit', 'submit']]
 
         if self.request.GET:
             #Create Venue Model
@@ -19,9 +19,9 @@ class MainHandler(webapp2.RequestHandler):
             #Sends category from url to the model
             vm.category = self.request.GET['category']
             #Sends city from url to the model
-            vm.category = self.request.GET['locality']
+            vm.locality = self.request.GET['locality']
             #Sends state from url to the model
-            vm.category = self.request.GET['region']
+            vm.region = self.request.GET['region']
 
             #Connect to API
             vm.callApi()
@@ -34,7 +34,7 @@ class MainHandler(webapp2.RequestHandler):
 
             p._body = vv.content
 
-            self.response.write(p.print_out())
+        self.response.write(p.print_out())
 
 class VenueView(object):
     '''Handles how user is shown data'''
@@ -61,13 +61,14 @@ class VenueView(object):
 
 class VenueModel(object):
     def __init__(self):
-        self.__url = "https://api.locu.com/v1_0/venue/search/?"
+        self.__url = 'https://api.locu.com/v1_0/venue/search/?'
+        self.__api_key = 'api_key=849008c80e7e8d249fc632d2ef3d070eea056759'
         self.__category = ''
         self.__locality = ''
         self.__region = ''
 
     def callApi(self):
-        json_obj = urllib2.urlopen(self.__url + self.__category + '&' + self.__locality + '&' + self.__region)
+        json_obj = urllib2.urlopen(self.__url + self.__category + '&' + self.__locality + '&' + self.__region + '&' + self.__api_key)
         data = json.load((json_obj))
 
         self._dos = []
