@@ -10,7 +10,7 @@ import json
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
-        p.inputs = [['name', 'text', 'name'],['category', 'text', 'category'],['city, state or zip code', 'text', 'location'],['Submit', 'submit']]
+        p.inputs = [['category', 'text', 'category'],['city', 'text', 'location'],['state', 'text', 'region'],['zip code', 'text', 'postal_code'],['Submit', 'submit']]
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
