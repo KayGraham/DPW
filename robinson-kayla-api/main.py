@@ -17,7 +17,6 @@ class MainHandler(webapp2.RequestHandler):
 
             #Create Venue Model
             vm = VenueModel()
-
             name = self.request.GET['category']
             print name
             #Sends category from url to the model
