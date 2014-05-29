@@ -58,7 +58,62 @@ class VenueView(object):
     def vdos(self, arr):
         self.__vdos = arr
         self.update()
-        
+
+class VenueModel(object):
+    def __init__(self):
+        self.__url = "https://api.locu.com/v1_0/venue/search/?"
+        self.__category = ''
+        self.__locality = ''
+        self.__region = ''
+
+    def callApi(self):
+        json_obj = urllib2.urlopen(self.__url + self.__category + '&' + self.__locality + '&' + self.__region)
+        data = json.load((json_obj))
+
+        self._dos = []
+
+        for item in data['objects']:
+            do = VenueData()
+            do.name = item['name']
+            do.locality = item['locality']
+            do.address = item['street_address']
+            do.state = item['region']
+            do.zip = item['postal_code']
+            do.phone = item['phone']
+            do.cat = item['categories']
+            do.url = item['website_url']
+            self._dos.append(do)
+
+    @property
+    def dos(self):
+        return self._dos
+
+    @property
+    def category(self):
+        pass
+
+    @category.setter
+    def category(self, c):
+        self.__category = c
+
+    @property
+    def locality(self):
+        pass
+
+    @locality.setter
+    def locality(self, l):
+        self.__locality = l
+
+    @property
+    def region(self):
+        pass
+
+    @region.setter
+    def region(self, r):
+        self.__region = r
+
+
+
 
 
 app = webapp2.WSGIApplication([
