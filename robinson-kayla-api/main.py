@@ -10,15 +10,17 @@ import json
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
-        p.inputs = [['category', 'text', 'Spa, restaurant'],['locality', 'text', 'city'],['region', 'text', 'state'],['Submit', 'submit']]
+        p.inputs = [['category', 'text', 'spa, restaurant'],['locality', 'text', 'city'],['region', 'text', 'state'],['Search', 'submit']]
 
         if self.request.GET:
 
-
             #Create Venue Model
             vm = VenueModel()
-            name = self.request.GET['category']
-            print name
+
+            #test var
+            test = self.request.GET['category']
+            print 'Test Category: ' + test
+
             #Sends category from url to the model
             #vm.category = self.request.GET['category']
             vm.category = self.request.GET['category']
@@ -68,18 +70,17 @@ class VenueModel(object):
     def __init__(self):
         self.__url = 'https://api.locu.com/v1_0/venue/search/?locality='
         self.__category = ''
-        print self.__category
+        print 'VenueModel Category: ' + self.__category
         self.__locality = ''
         self.__region = ''
         self.__api_key = 'api_key=849008c80e7e8d249fc632d2ef3d070eea056759'
-        self.full_url = self.__url + self.__locality + '&region=' + self.__region + '&category=' + self.__category + '&' + self.__api_key
-        print self.full_url
+        self.__full_url = self.__url + self.__locality + '&region=' + self.__region + '&category=' + self.__category + '&' + self.__api_key
+        print 'Full URL: (' + self.__full_url + ')'
 
     def callApi(self):
-        request = urllib2.Request('https://api.locu.com/v1_0/venue/search/?locality=Albany&category=spa&api_key=849008c80e7e8d249fc632d2ef3d070eea056759')
+        request = urllib2.Request(self.__full_url)
         opener = urllib2.build_opener()
         result = opener.open(request)
-
         data = json.load(result)
 
         self._dos = []
@@ -141,9 +142,16 @@ class Page(object):
         self._head = '''
 <html>
     <head>
-        <title></title>
+        <title>City Search</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>'''
+    <body>
+        <header>
+            <h1>City Search</h1>
+            <div id="wrapper">
+                <div id="wrapperText"><h2>Search your city <br />to find new <br />places to <span style="color:#FFF300">shop, dine and relax.<h2></div>
+            </div>
+        </header>'''
         self._body = ''
         self._close = '''
     </body>
@@ -155,8 +163,8 @@ class Page(object):
 class FormPage(Page):
     def __init__(self):
         super(FormPage, self).__init__()
-        self._form_open = '<form method="GET">'
-        self._form_close = '</form>'
+        self._form_open = '<div id="form"><form method="GET">'
+        self._form_close = '</form></div>'
         self.__inputs = []
         self._form_inputs = ''
 
