@@ -2,6 +2,9 @@ body {
 width: 960px;
 margin: 0 auto;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+background: #EFF2F4;
+background-image: url('../images/background.png');
+background-repeat:repeat-x;
 }
 #wrapper{
 background-color: #000;
@@ -38,4 +41,11 @@ font-size: 18px;
 border: none;
 background-color: #FFF300;
 text-transform: uppercase;
+}
+#results{
+width: 960px;
+height: auto;
+margin-top: 15px;
+background-color: #FFFFFF;
+padding: 20px;
 }

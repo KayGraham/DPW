@@ -29,7 +29,6 @@ class MainHandler(webapp2.RequestHandler):
             #Sends state from url to the model
             vm.region = self.request.GET['region']
 
-
             #Connect to API
             vm.callApi()
 
@@ -47,11 +46,18 @@ class VenueView(object):
     '''Handles how user is shown data'''
     def __init__(self):
         self.__vdos = []
-        self.__content = '<br />'
+        self.__content = '<div id="results"><h3>Shops</h3><hr>'
 
     def update(self):
-        for do in self.__vdos:
-            self.__content += "<h3>" + do.name + "</h3> Address: " + do.address + " " + do.state + ", " + do.zip + "<br /> Phone: " + do.phone
+
+        if not self.__vdos:
+            self.__content += 'Sorry, none in your area listed.'
+        else:
+
+            for do in self.__vdos:
+                self.__content += "<div class='name'>" + do.name + "</div> Address: " + str(do.address) + ' ' + do.state + ", " + str(do.zip) + "<br /> Phone: " + str(do.phone)
+
+        self.__content += '</div>'
 
     @property
     def content(self):
@@ -74,12 +80,14 @@ class VenueModel(object):
         self.__locality = ''
         self.__region = ''
         self.__api_key = 'api_key=849008c80e7e8d249fc632d2ef3d070eea056759'
-        self.__full_url = self.__url + self.__locality + '&region=' + self.__region + '&category=' + self.__category + '&' + self.__api_key
-        print 'Full URL: (' + self.__full_url + ')'
+        self.__full_url = ''
 
     def callApi(self):
+        self.__full_url = self.__url + self.__locality + '&region=' + self.__region + '&category=' + self.__category + '&' + self.__api_key
+        print 'Full URL: (' + self.__full_url + ')'
         request = urllib2.Request(self.__full_url)
         opener = urllib2.build_opener()
+
         result = opener.open(request)
         data = json.load(result)
 
