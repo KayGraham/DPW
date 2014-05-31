@@ -26,10 +26,8 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="73" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="3075">
-              <folding>
-                <element signature="e#37#51#0" expanded="true" />
-              </folding>
+            <state line="157" column="41" selection-start="4234" selection-end="4234" vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="3045">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -37,7 +35,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="26" selection-start="833" selection-end="833" vertical-scroll-proportion="0.82004553" vertical-offset="0" max-vertical-offset="878">
+            <state line="5" column="44" selection-start="160" selection-end="160" vertical-scroll-proportion="0.10302198" vertical-offset="0" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -59,10 +57,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1210" />
-    <option name="y" value="26" />
+    <option name="x" value="15" />
+    <option name="y" value="22" />
     <option name="width" value="1342" />
-    <option name="height" value="1000" />
+    <option name="height" value="850" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -90,6 +88,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -138,7 +137,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunManager">
@@ -275,7 +273,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1210" y="26" width="1342" height="1000" extended-state="0" />
+    <frame x="15" y="22" width="1342" height="850" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -318,10 +316,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="73" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="26" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2850">
-          <folding>
-            <element signature="e#37#51#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -332,16 +342,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="73" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="3075">
-          <folding>
-            <element signature="e#37#51#0" expanded="true" />
-          </folding>
+        <state line="157" column="41" selection-start="4234" selection-end="4234" vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="3045">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="26" selection-start="833" selection-end="833" vertical-scroll-proportion="0.82004553" vertical-offset="0" max-vertical-offset="878">
+        <state line="5" column="44" selection-start="160" selection-end="160" vertical-scroll-proportion="0.10302198" vertical-offset="0" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>

@@ -46,7 +46,7 @@ class VenueView(object):
     '''Handles how user is shown data'''
     def __init__(self):
         self.__vdos = []
-        self.__content = '<div id="results"><h3>Shops</h3><hr>'
+        self.__content = '<div id="results"><div id="shops"><h2>Shops</h2></div>'
 
     def update(self):
 
@@ -55,7 +55,7 @@ class VenueView(object):
         else:
 
             for do in self.__vdos:
-                self.__content += "<div class='name'>" + do.name + "</div> Address: " + str(do.address) + ' ' + do.state + ", " + str(do.zip) + "<br /> Phone: " + str(do.phone)
+                self.__content += "<div class='name'><strong>" + do.name + "</strong></div> Address: " + str(do.address) + ' ' + do.state + ", " + str(do.zip) + "<br /> Phone: " + str(do.phone) + '<br /> Website: <a href="' + str(do.url) + '"target="_blank">' + str(do.url) + '</a><hr>'
 
         self.__content += '</div>'
 
@@ -155,7 +155,7 @@ class Page(object):
     </head>
     <body>
         <header>
-            <h1>City Search</h1>
+            <img src="images/logo3.png"/>
             <div id="wrapper">
                 <div id="wrapperText"><h2>Search your city <br />to find new <br />places to <span style="color:#FFF300">shop, dine and relax.<h2></div>
             </div>
