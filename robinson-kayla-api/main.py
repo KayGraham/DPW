@@ -10,7 +10,7 @@ import json
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
-        p.inputs = [['category', 'text', 'spa, restaurant'],['locality', 'text', 'city'],['region', 'text', 'state'],['Search', 'submit']]
+        p.inputs = [['category', 'text', 'spa, restaurant','name','placeholder'],['locality', 'text', 'city','name','placeholder'],['region', 'text', 'state','name','placeholder'],['Search', 'submit'],['myFunction()', 'button', 'Reset']]
 
         if self.request.GET:
 
@@ -162,6 +162,13 @@ class Page(object):
         </header>'''
         self._body = ''
         self._close = '''
+
+        <script>
+            function myFunction()
+                {
+                    document.getElementById("myForm").reset();
+                }
+        </script>
     </body>
 </html>'''
 
@@ -171,8 +178,10 @@ class Page(object):
 class FormPage(Page):
     def __init__(self):
         super(FormPage, self).__init__()
-        self._form_open = '<div id="form"><form method="GET">'
-        self._form_close = '</form></div>'
+        self._form_open = '<div id="form"><form method="GET" id="myForm">'
+        self._form_close = '''
+        </form>
+        </div>'''
         self.__inputs = []
         self._form_inputs = ''
 
@@ -184,12 +193,17 @@ class FormPage(Page):
     def inputs(self, arr):
         self.__inputs = arr
         for item in arr:
-            self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]
-            try:
-                self._form_inputs += '" placeholder="' + item[2] + '" required/>'
+            if item[1] == 'text':
 
-            except:
-                self._form_inputs += '" />'
+                self._form_inputs += '<input type="' + item[1] + '" name="' + item[0] + '" placeholder="' + item[2] + '" required/>'
+
+            elif item[1] == 'submit':
+
+                self._form_inputs += '<input type="' + item[1] + '" name="' + item[0] + '" />'
+
+            else:
+
+                self._form_inputs += '<input type="' + item[1] + '" onclick="' + item[0] + '" value="' + item[2] + '" />'
 
     def print_out(self):
         return self._head + self._form_open + self._form_inputs + self._form_close + self._body + self._close
